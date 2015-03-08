@@ -1,0 +1,111 @@
+@import "bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "bower_components/neat/app/assets/stylesheets/neat";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navbar {
+  background: #fff;
+  height: 80px;
+}
+
+.navbar ul {
+  position: absolute;
+  right: 0;
+}
+
+.navbar ul li {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  margin-left: 14px;
+  color: #269FC3;
+  border: 2px solid transparent;
+  padding: 6px;
+  transition: all 0.4s ease;
+}
+
+.navbar ul li:hover {
+  cursor: pointer;
+  color: #CA230E;
+}
+
+.hero-banner {
+  border-bottom: 1px solid black;
+  height: 600px;
+  padding-top: 100px;
+/*   background: url('images/purple-banner.jpg') no-repeat center;
+ */  background-size: cover;
+}
+
+.hero-banner h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 74px;
+  margin: 0;
+}
+
+.hero-banner h4 {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+section p {
+  font-size: 1.3em;
+}
+
+section h2 {
+  text-align: center;
+  font-family: inherit;
+  font-style: italic;
+  font-size: 1.7em;
+}
+
+.about {
+  background: #6A91FC;
+  padding: 75px 0;
+  height: 300px;
+}
+
+.portfolio {
+  background: #B7A93C;
+  padding: 75px 0;
+  height: 300px;
+}
+
+.blog {
+  background: #B82C1E;
+  padding: 75px 0;
+  height: 300px;
+}
+
+.blog h2 {
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
+.contact {
+  background: #00951D;
+  padding: 75px 0;
+  height: 300px;
+}

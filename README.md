@@ -4,7 +4,14 @@
 
 
 
+## Parse Tokens
+* `Application ID: qBQnGMkwKJIbp3cCVApnMjRBCSezpmu8rSbV7M1I`
+* `Javascript Key: AgrmzYVAiTtyG91nKHRgb9HN6cXkQzfi4JIVO5Yj`
+* `REST API Key: vyaxQsffU5lNaiG5henoGBTaQ1FcEyzmhFxOeVKK`
 
+* `Client Key: 6PdNfUaCbQnLUjjFAUGRI13iMJbc9ImPm9wY0YST`
+* `Master Key: 1ifsUFFzP6HcPyiYPLP0lDzLEgPrqzBZOmF36flx`
+* `.NET Key: vP6RvsPaBlSCxj4wQAJIm3UPY3PsUkGhtbQ81Kxl`
 
 
 ## Running / Development

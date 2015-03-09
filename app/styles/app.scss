@@ -1,4 +1,6 @@
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+$visual-grid: true;
+$gutter: em(57px);
 @import 'bower_components/neat/app/assets/stylesheets/neat';
 
 * {

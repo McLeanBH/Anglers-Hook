@@ -46,7 +46,7 @@ body {
 }
 
 .footer {
-  background-color: #4d74d2;
+  background-color: #396FD5;
   height: 150px;
 }
 
@@ -58,9 +58,8 @@ body {
 
 .login {
   margin: 0 auto;
-  border: 6px solid #000;
   padding-top: 75px;
-  width: 500px;
+  width: 600px;
   min-height: 900px;
   text-align: center;
 }
@@ -68,6 +67,7 @@ body {
 .field {
   display: block;
   margin: 20px;
+  margin-left: 50px;
   border-top: 4px solid #d42b1f;
   border-right: 4px solid #000;
   border-bottom: 4px solid #000;
@@ -79,8 +79,17 @@ body {
 
 .login-button {
   margin-left: 200px;
-  border-top: 4px solid #d42b1f;
-  border-right: 4px solid #000;
-  border-bottom: 4px solid #000;
-  border-left: 4px solid #d42b1f;
+  border-top: 4px solid #000;
+  border-right: 4px solid #d42b1f;
+  border-bottom: 4px solid #d42b1f;
+  border-left: 4px solid #000;
+}
+
+fieldset {
+  margin: 40px;
+  padding-top: 160px;
+  padding-left: 50px;
+  padding-bottom: 160px;
+  padding-right: 50px;
+  border: 10px solid #396FD5;
 }

@@ -12,18 +12,6 @@ body {
   padding: 0;
 }
 
-.nav-container {
-  position: relative;
-  margin: 0 auto;
-  min-width: 1000px;
-  background-color: #BDBDBD;
-}
-
-.main-index {
-  height: 800px;
-  background-color: #EBD535;
-}
-
 .index-navbar {
   background: #BDBDBD;
   height: 80px;
@@ -45,51 +33,144 @@ body {
   }
 }
 
+.nav-container {
+  position: relative;
+  margin: 0 auto;
+  background-color: #bdbdbd;
+  min-width: 1000px;
+}
+
+.main-index {
+  background-color: #ebd535;
+  height: 800px;
+}
+
 .footer {
-  background-color: #396FD5;
+  background-color: #000;
   height: 150px;
+  color: #fff;
 }
 
 .copy {
   margin: 0 auto;
   padding-top: 50px;
   padding-left: 45%;
+  color: #fff;
 }
+
+.wrapper {
+  background-color: #396fd5;
+}
+
+/* LOGIN */
 
 .login {
   margin: 0 auto;
-  padding-top: 75px;
+  background-color: #fff;  
+  padding-top: 25px;
   width: 600px;
-  min-height: 900px;
+  height: 800px;
   text-align: center;
 }
 
-.field {
+.login-header {
+  text-decoration: underline;
+}
+
+.login-field {
   display: block;
   margin: 20px;
   margin-left: 50px;
-  border-top: 4px solid #d42b1f;
+  border-top: 4px solid #396fd5;
   border-right: 4px solid #000;
   border-bottom: 4px solid #000;
-  border-left: 4px solid #d42b1f;
+  border-left: 4px solid #396fd5;
   padding-left: 170px;
   text-align: right;
   line-height: 2;
 }
 
-.login-button {
-  margin-left: 200px;
+.login-password {
   border-top: 4px solid #000;
-  border-right: 4px solid #d42b1f;
-  border-bottom: 4px solid #d42b1f;
+  border-right: 4px solid #396fd5;
+  border-bottom: 4px solid #396fd5;
   border-left: 4px solid #000;
 }
 
-fieldset {
-  margin: 40px;
+.login-button {
+  margin-left: 200px;
+  border-top: 4px solid #000;
+  border-right: 4px solid #396fd5;
+  border-bottom: 4px solid #396fd5;
+  border-left: 4px solid #000;
+}
+
+.login-fieldset {
+  margin: 20px;
+  border: 10px solid #396fd5;
   padding-top: 160px;
-  padding-left: 50px;
-  padding-bottom: 160px;
   padding-right: 50px;
-  border: 10px solid #396FD5;
+  padding-bottom: 160px;
+  padding-left: 50px;
+}
+
+.inputters {
+  background-color: #eee;
+  color: #fff;
+}
+
+/* REGISTRATION */
+
+.registration {
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 150px;
+  width: 600px;
+  height: 900px;
+  text-align: center;
+}
+
+.reg-field {
+  display: block;
+  margin: 20px;
+  margin-left: 100px;
+  padding-left: 170px;
+  text-align: right;
+  line-height: 2;
+}
+
+.register-button {
+  margin-top: 60px;
+  margin-left: 300px;
+  border-top: 4px solid #000;
+  border-right: 4px solid #396fd5;
+  border-bottom: 4px solid #396fd5;
+  border-left: 4px solid #000;
+
+}
+
+.reg-fieldset {
+  border: 10px solid #396fd5;
+}
+
+.reg-header {
+  text-decoration: underline;
+}
+
+.first-name {
+  margin-top: 50px;
+}
+
+.r1 {
+  border-top: 4px solid #396fd5;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  border-left: 4px solid #396fd5;
+}
+
+.r2 {
+  border-top: 4px solid #000;
+  border-right: 4px solid #396fd5;
+  border-bottom: 4px solid #396fd5;
+  border-left: 4px solid #000;
 }

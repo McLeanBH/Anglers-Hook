@@ -1,22 +1,24 @@
-<div class="index-navbar">
-  <div class="nav-container">
-    <ul>
-      <li>{{link-to "Home" 'welcome'}}</li>
-      <li>{{link-to "Register" 'register'}}</li>
-      <li>{{link-to "Login" 'login'}}</li>
-    </ul>
+<div class="wrapper">
+  <div class="index-navbar">
+    <div class="nav-container">
+      <ul>
+        <li>{{link-to "Home" 'welcome'}}</li>
+        <li>{{link-to "Register" 'register'}}</li>
+        <li>{{link-to "Login" 'login'}}</li>
+      </ul>
+    </div>
   </div>
-</div>
-<div class="registration">
-  <form class="register-form">
-    <h1>Create An Account!</h1>
-    <fieldset>
-      {{input value=model.firstName placeholder='First Name'}}
-      {{input value=model.lastName placeholder='Last Name'}}
-      {{input value=model.email placeholder='Email Address'}}
-      {{input value=model.username placeholder='Username'}}
-      {{input value=model.password placeholder='Password'}}
-      <input type="submit" value="Create Account" class="register"/>
-    </fieldset>
-  </form>
+  <div class="registration">
+    <form class="register-form">
+      <fieldset class="reg-fieldset">
+        <h1 class="reg-header">Reigster For Free Account!</h1>
+        {{input class="reg-field r1 first-name inputters" value=model.firstName placeholder='First Name'}}<br>
+        {{input class="reg-field r2 last-name inputters" value=model.lastName placeholder='Last Name'}}<br>
+        {{input class="reg-field r1 email inputters" value=model.email placeholder='Email Address'}}<br>
+        {{input class="reg-field r2 username inputters" value=model.username placeholder='Username'}}<br>
+        {{input class="reg-field r1 password inputters" value=model.password placeholder='Password'}}<br>
+        <input type="submit" value="Create Account" class="register-button"/>
+      </fieldset>
+    </form>
+  </div>
 </div>

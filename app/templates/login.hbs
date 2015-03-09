@@ -1,21 +1,22 @@
-<div class="index-navbar">
-  <div class="nav-container">
-    <ul>
-      <li>{{link-to "Home" 'welcome'}}</li>
-      <li>{{link-to "Register" 'register'}}</li>
-      <li>{{link-to "Login" 'login'}}</li>
-    </ul>
+<div class="wrapper">
+  <div class="index-navbar">
+    <div class="nav-container">
+      <ul>
+        <li>{{link-to "Home" 'welcome'}}</li>
+        <li>{{link-to "Register" 'register'}}</li>
+        <li>{{link-to "Login" 'login'}}</li>
+      </ul>
+    </div>
   </div>
-</div>
-<div class="login">
-  <form class="login-form">
-    <fieldset>
-      <h1>Login</h1>
-      <h4>Don't have an account?</h4>
-      <h3>{{link-to "Create Account" 'register'}}</h3>
-      {{input class="login-email field" value=model.email placeholder="Email Address"}}
-      {{input class="login-password field" value=model.password placeholder="Password"}}
-      <input type="submit" value="Login" class="login-button"/>
-    </fieldset>
-  </form>
+  <div class="login">
+    <form class="login-form">
+      <fieldset class="login-fieldset">
+        <h1 class="login-header">Login</h1>
+        <h4>Don't have an account? {{link-to "Create One Here" 'register'}}</h4>
+        {{input class="login-email login-field inputters" value=model.email placeholder="Email Address"}}
+        {{input class="login-password login-field inputters" value=model.password placeholder="Password"}}
+        <input type="submit" value="Login" class="login-button"/>
+      </fieldset>
+    </form>
+  </div>
 </div>

@@ -1,11 +1,22 @@
-<form class="login-form">
-  <h1>Login Using Your Email Address and Password</h1>
-  <h6>If you haven't created an acount, please visit the Registration {{link-to register.hbs}} section.</h6>
-    <hr />
-  <input type="text" class="login-email">
-    <hr />
-  <input type="text" class="login-password">
-    <hr />
-  <button class="login-button">Login</button>
-    <hr />
-</form>
+<div class="index-navbar">
+  <div class="nav-container">
+    <ul>
+      <li>{{link-to "About" 'welcome'}}</li>
+      <li>{{link-to "Register" 'register'}}</li>
+      <li>{{link-to "Login" 'login'}}</li>
+      <li>{{link-to "Contact" 'welcome'}}</li>
+    </ul>
+  </div>
+</div>
+<div class="login">
+  <form class="login-form">
+    <fieldset>
+      <h1>Login</h1>
+      <h4>Don't have an account?</h4>
+      <h3>{{link-to "Create Account" 'register'}}</h3>
+      <input type="text" class="login-email field" placeholder="Email Address">
+      <input type="text" class="login-password field" placeholder="Password">
+      <input type="submit" value="Login" class="login-button"/>
+    </fieldset>
+  </form>
+</div>

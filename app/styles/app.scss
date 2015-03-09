@@ -10,19 +10,25 @@ body {
   padding: 0;
 }
 
-.container {
+.nav-container {
   position: relative;
   margin: 0 auto;
-  min-width: 900px;
+  min-width: 1000px;
+  background-color: #BDBDBD;
 }
 
-.navbar {
-  background: #fff;
+.main-index {
+  height: 800px;
+  background-color: #EBD535;
+}
+
+.index-navbar {
+  background: #BDBDBD;
   height: 80px;
 
   ul {
     position: absolute;
-    right: 0;
+    right: 40px;
   }
 
   li {
@@ -30,82 +36,49 @@ body {
     transition: all .4s ease;
     margin-left: 14px;
     border: 2px solid transparent;
+    cursor: pointer;
     padding: 6px;
     color: #269fc3;
     font-family: 'Open Sans', sans-serif;
   }
 }
 
-.navbar ul li:hover {
-  cursor: pointer;
-  color: #ca230e;
-}
-
-.hero-banner {
-  border-bottom: 1px solid black;
-  background: url('') no-repeat center;
-  background-size: cover;
-  padding-top: 100px;
-  height: 600px;
-
-  h1 {
-    margin: 0;
-    text-align: center;
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 74px;
-  }
-
-  h4 {
-    margin: 0;
-    margin-bottom: 60px;
-    text-align: center;
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-  }
-}
-
-section p {
-  font-size: 1.3em;
-}
-
-section h2 {
-  text-align: center;
-  font-family: inherit;
-  font-size: 1.7em;
-  font-style: italic;
-}
-
-.about {
-  background: #6a91fc;
-  padding: 75px 0;
-  height: 300px;
-}
-
-.portfolio {
-  background: #b7a93c;
-  padding: 75px 0;
-  height: 300px;
-}
-
-.blog {
-  background: #b82c1e;
-  padding: 75px 0;
-  height: 300px;
-
-  h2 {
-    margin-top: 0;
-    padding-top: 30px;
-  }
-}
-
-.contact {
-  background: #00951d;
-  padding: 75px 0;
-  height: 300px;
-}
-
 .footer {
   background-color: #4d74d2;
   height: 150px;
+}
+
+.copy {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-left: 45%;
+}
+
+.login {
+  margin: 0 auto;
+  border: 6px solid #000;
+  padding-top: 75px;
+  width: 500px;
+  min-height: 900px;
+  text-align: center;
+}
+
+.field {
+  display: block;
+  margin: 20px;
+  border-top: 4px solid #d42b1f;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  border-left: 4px solid #d42b1f;
+  padding-left: 170px;
+  text-align: right;
+  line-height: 2;
+}
+
+.login-button {
+  margin-left: 200px;
+  border-top: 4px solid #d42b1f;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  border-left: 4px solid #d42b1f;
 }

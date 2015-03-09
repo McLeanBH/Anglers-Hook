@@ -1,15 +1,14 @@
 <div class="index-navbar">
   <div class="nav-container">
     <ul>
-      <li>{{link-to "About" 'welcome'}}</li>
+      <li>{{link-to "Home" 'welcome'}}</li>
       <li>{{link-to "Register" 'register'}}</li>
       <li>{{link-to "Login" 'login'}}</li>
-      <li>{{link-to "Contact" 'welcome'}}</li>
     </ul>
   </div>
 </div>
 <div class="registration">
-  <form {{action "save" on="submit"}}>
+  <form class="register-form">
     <h1>Create An Account!</h1>
     <fieldset>
       {{input value=model.firstName placeholder='First Name'}}

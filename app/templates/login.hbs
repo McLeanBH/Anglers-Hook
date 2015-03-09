@@ -1,10 +1,9 @@
 <div class="index-navbar">
   <div class="nav-container">
     <ul>
-      <li>{{link-to "About" 'welcome'}}</li>
+      <li>{{link-to "Home" 'welcome'}}</li>
       <li>{{link-to "Register" 'register'}}</li>
       <li>{{link-to "Login" 'login'}}</li>
-      <li>{{link-to "Contact" 'welcome'}}</li>
     </ul>
   </div>
 </div>
@@ -14,8 +13,8 @@
       <h1>Login</h1>
       <h4>Don't have an account?</h4>
       <h3>{{link-to "Create Account" 'register'}}</h3>
-      <input type="text" class="login-email field" placeholder="Email Address">
-      <input type="text" class="login-password field" placeholder="Password">
+      {{input class="login-email field" value=model.email placeholder="Email Address"}}
+      {{input class="login-password field" value=model.password placeholder="Password"}}
       <input type="submit" value="Login" class="login-button"/>
     </fieldset>
   </form>

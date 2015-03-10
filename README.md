@@ -1,10 +1,17 @@
 # Project
 
 
-## links for api
+## links for apis
 (http://www.wunderground.com/weather/api/d/d98a9b35b6b3cbd9/edit.html?api_action=changesubscription&api_history=0&api_usage=0&api_package=c)
 (http://www.wunderground.com/weather/api/d/docs?MR=1)
 (http://www.wunderground.com/weather/api/d/docs?d=resources/logo-usage-guide&MR=1)
+
+* `fishing buddy` -- (http://www.fishingbuddy.com/developers)
+* `world of marine species` -- (http://www.marinespecies.org/aphia.php)
+* `world tides` -- (https://www.worldtides.info/apidocs)
+* `world weather online` -- (http://www.worldweatheronline.com/api/marine-weather-api.aspx)
+
+
 
 * `weather-underground api key: d98a9b35b6b3cbd9`
 
@@ -19,6 +26,8 @@
 * `Master Key: 1ifsUFFzP6HcPyiYPLP0lDzLEgPrqzBZOmF36flx`
 * `.NET Key: vP6RvsPaBlSCxj4wQAJIm3UPY3PsUkGhtbQ81Kxl`
 
+## Planning
+* `user-stories` (http://dannorth.net/whats-in-a-story/)
 
 ## Running / Development
 * `ember server`

@@ -5,7 +5,7 @@ import Ember from 'ember';
 
 export default Ember.Object.extend({
   find: function(name, id){
-    return ajax("https://api.parse.com/1/classes/User/" + id).then(function(user){
+    return ajax("https://api.parse.com/1/user/" + id).then(function(user){
       user.id = user.objectId;
       delete user.objectId;
       return user;
@@ -13,7 +13,7 @@ export default Ember.Object.extend({
   },
 
   findAll: function(name){
-    return ajax("https://api.parse.com/1/classes/User").then(function(response){
+    return ajax("https://api.parse.com/1/user").then(function(response){
       return response.results.map(function(user){
         user.id = user.objectId;
         delete user.objectId;
@@ -23,7 +23,7 @@ export default Ember.Object.extend({
   },
 
   findQuery: function(name, query) {
-    return ajax("https://api.parse.com/1/classes/User", {
+    return ajax("https://api.parse.com/1/user", {
       data: Ember.$.param({
           where: JSON.stringify(query)
         })
@@ -38,7 +38,7 @@ export default Ember.Object.extend({
 
   destroy: function(name, record){
     return ajax({
-      url: "https://api.parse.com/1/classes/User/" + record.id,
+      url: "https://api.parse.com/1/user/" + record.id,
       type: "DELETE"
     });
   },
@@ -46,7 +46,7 @@ export default Ember.Object.extend({
   save: function(name, record){
     if(record.id){
       return ajax({
-        url: "https://api.parse.com/1/classes/User/" + record.id,
+        url: "https://api.parse.com/1/user/" + record.id,
         type: "PUT",
         data: JSON.stringify(record)
       }).then(function(response){
@@ -56,7 +56,7 @@ export default Ember.Object.extend({
       });
     }else {
       return ajax({
-        url: "https://api.parse.com/1/classes/User",
+        url: "https://api.parse.com/1/user",
         type: "POST",
         data: JSON.stringify(record)
       }).then(function(response){

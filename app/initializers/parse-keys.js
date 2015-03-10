@@ -1,3 +1,5 @@
+// (app/initializers/parse-keys.js) //
+
 import Ember from "ember";
 
 export function initialize(/* container, application */) {

@@ -17,7 +17,9 @@
         {{input class="reg-field r1 email inputters" value=model.email placeholder='Email Address'}}<br>
         {{input class="reg-field r2 username inputters" value=model.username placeholder='Username'}}<br>
         {{input class="reg-field r1 password inputters" value=model.password placeholder='Password'}}<br>
-        <input type="submit" value="Create Account" class="register-button"/>
+        <input type="submit" value="Create Account" class="register-button"/><br>
+        <span>{{link-to "* Continue As Visitor" 'welcome'}}</span><br>
+        <span>* Visitors are restricted to non-premium features</span>
       </fieldset>
     </form>
   </div>

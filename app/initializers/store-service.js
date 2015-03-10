@@ -1,6 +1,5 @@
 // (app/initializers/store-service.js) //
 
-
 export function initialize(container, application) {
   application.inject('route', 'store', 'service:store');
   application.inject('controller', 'store', 'service:store');

@@ -9,6 +9,10 @@ Router.map(function() {
   this.route('welcome', {path: '/'});
   this.route('login');
   this.route('register');
+
+  this.route('segue', function() {
+    this.route('view-one');
+  });
 });
 
 export default Router;

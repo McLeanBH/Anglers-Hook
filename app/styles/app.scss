@@ -41,6 +41,23 @@ body {
   background-size: cover;
 } */
 
+/* .icon-right {
+  background: url('/assets/img/gotoneonright.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.nav-left {
+  float: left;
+  background: url('/assets/img/bluemarlinlogo.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 80px;
+}
+
 .nav-container {
   position: relative;
   margin: 0 auto;
@@ -194,4 +211,19 @@ body {
   border-right: 4px solid #396fd5;
   border-bottom: 4px solid #396fd5;
   border-left: 4px solid #000;
+}
+
+.section {
+  height: 300px;
+}
+
+.one,
+.three,
+.five {
+  background-color: #6DBE80;
+}
+
+.two,
+.four {
+  background-color: #EF9655;
 }

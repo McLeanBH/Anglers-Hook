@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
   actions: {
     saveUser: function(){
       var userData = this.getProperties('firstName', 'lastName', 'email', 'username', 'password');
-      console.log(userData);
+      this.store.save('user', userData);
     }
   }
 });

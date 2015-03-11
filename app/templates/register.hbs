@@ -1,17 +1,19 @@
 <div class="wrapper">
+  <div class="nav-left"></div>
   <div class="index-navbar">
     <div class="nav-container">
       <ul>
         <li>{{link-to "Home" 'welcome'}}</li>
         <li>{{link-to "Register" 'register'}}</li>
         <li>{{link-to "Login" 'login'}}</li>
+        <li>{{link-to "View-1" 'segue.view-one'}}</li>
       </ul>
     </div>
   </div>
   <div class="registration">
     <form class="register-form"{{action 'saveUser' on='submit'}}>
       <fieldset class="reg-fieldset">
-        <h1 class="reg-header">Reigster For Free Account!</h1>
+        <h1 class="reg-header">Register For Free Account!</h1>
         {{input class="reg-field r1 first-name inputters" value=firstName placeholder='First Name'}}<br>
         {{input class="reg-field r2 last-name inputters" value=lastName placeholder='Last Name'}}<br>
         {{input class="reg-field r1 email inputters" value=email placeholder='Email Address'}}<br>

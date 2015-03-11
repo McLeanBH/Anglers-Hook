@@ -10,10 +10,11 @@
 * `world of marine species` -- (http://www.marinespecies.org/aphia.php)
 * `world tides` -- (https://www.worldtides.info/apidocs)
 * `world weather online` -- (http://www.worldweatheronline.com/api/marine-weather-api.aspx)
-
-
-
 * `weather-underground api key: d98a9b35b6b3cbd9`
+
+* `google developer API (geolocation, geocoding, maps javascript v3): AIzaSyCQYr_DPPw2Jm0G6tGt880cJpbseBJ0Zc0`
+
+* `$curl -o vendor/gmaps.js https://maps.googleapis.com/maps/api/js?key=AIzaSyCQYr_DPPw2Jm0G6tGt880cJpbseBJ0Zc0`
 
 ## Parse Tokens
 (https://parse.com/docs/rest#users-signup)

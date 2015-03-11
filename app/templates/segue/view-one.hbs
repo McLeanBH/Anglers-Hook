@@ -1,17 +1,29 @@
-<div class="index-navbar">
-  <div class="nav-left"></div>
-  <div class="nav-container">
-    <ul>
-      <li>{{link-to "Home" 'welcome'}}</li>
-      <li>{{link-to "Register" 'register'}}</li>
-      <li>{{link-to "Login" 'login'}}</li>
-      <li>{{link-to "View-1" 'segue.view-one'}}</li>
-    </ul>
-  </div>
-</div>
-  <div class="section one"><a href="#"></a></div>
-  <div class="section two"><a href="#"></a></div>
-  <div class="section three"><a href="#"></a></div>
-  <div class="section four"><a href="#"></a></div>
-  <div class="section five"><a href="#"></a></div>
-{{outlet}}
+  <header class="tabs-header">
+    <h2>View-1</h2>
+  </header>
+
+  <div class="home-base">
+      <div class="left-content-wrapper">
+        <p>hello hello hello </p>
+        <p>Lorem ipsum dolor sit amet, cons</p>
+      </div>
+      <div class="right-content-wrapper">
+        <ul class="accordian">
+                <li class="tabs" id="tab-1"><button class="accordian-control"></button><div class="tab-items"></div></li>
+                <li class="tabs" id="tab-2"><button class="accordian-control"></button><div class="tab-items"></div></li>
+                <li class="tabs" id="tab-3"><button class="accordian-control"></button><div class="tab-items"></div></li>
+                <li class="tabs" id="tab-4"><button class="accordian-control"></button><div class="tab-items"></div></li>
+              </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt sed, ipsa excepturi totam ex. Incidunt aut totam culpa a, ipsam, dolorum quas non veniam expedita, pariatur cum modi nihil?</p>
+      </div>
+      <div class="tab-foot">
+          <ul class="foot-list">
+            <li class="footer-item" id="sv1">segue-view</li>
+            <li class="footer-item" id="sv2">segue-view</li>
+            <li class="footer-item" id="sv3">segue-view</li>
+          </ul>
+        </div>
+    </div>
+
+    <footer class="footer2"></footer>
+    {{outlet}}

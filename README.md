@@ -6,6 +6,10 @@
 - need to create component/module for 'forgot password?' link-to helper on login page*
 - need to add anchor elements or link-to helpers for footer-icons*** (ben, 3/11 5:58pm)***
 
+
+
+* `weather icons reference: (http://libraries.io/npm/ember-cli-weather-icons)`
+
 ## links for apis
 (http://www.wunderground.com/weather/api/d/d98a9b35b6b3cbd9/edit.html?api_action=changesubscription&api_history=0&api_usage=0&api_package=c)
 (http://www.wunderground.com/weather/api/d/docs?MR=1)

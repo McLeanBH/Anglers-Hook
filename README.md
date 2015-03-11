@@ -1,6 +1,11 @@
 # Project
 
 
+### PERSONAL NOTES ###
+- potentially need to change "private": true, to put true in quotes within package.json*
+- need to create component/module for 'forgot password?' link-to helper on login page*
+- need to add anchor elements or link-to helpers for footer-icons*** (ben, 3/11 5:58pm)***
+
 ## links for apis
 (http://www.wunderground.com/weather/api/d/d98a9b35b6b3cbd9/edit.html?api_action=changesubscription&api_history=0&api_usage=0&api_package=c)
 (http://www.wunderground.com/weather/api/d/docs?MR=1)

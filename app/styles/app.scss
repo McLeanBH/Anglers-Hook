@@ -13,7 +13,7 @@ body {
 }
 
 .index-navbar {
-  background: #fbd42c;
+  background: #396fd5;
   height: 80px;
 
   ul {
@@ -23,6 +23,7 @@ body {
   }
 
   li {
+    background-color: #FDB42C;
     display: inline-block;
     margin-left: 44px;
     border: 4px solid #000;
@@ -67,6 +68,7 @@ body {
 
 .main-index {
   background-color: #396fd5;
+  background: url('/assets/img/heavyseas.jpg') center center no-repeat;
   height: 800px;
 }
 
@@ -230,5 +232,5 @@ body {
 
 .map-canvas {
   height: 500px;
-  width: 500px;  
+  width: 500px;
 }

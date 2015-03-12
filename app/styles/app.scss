@@ -252,7 +252,7 @@ body {
   border-left: 4px solid #000;
 }
 
-.section {
+/* .section {
   height: 300px;
 }
 
@@ -266,9 +266,40 @@ body {
 .four {
   background-color: #fbd42c;
 }
+ */
+
+ /* Segue - View-One */
+
+.left-content-wrapper,
+.right-content-wrapper {
+  display: inline-block;
+}
+
+.left-content-wrapper {
+  width: 400px;
+}
+
+.right-content-wrapper {
+  width: 600px;
+}
+
 
 .map-canvas {
   margin: 0 auto;
-  width: 900px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
+}
+
+.logo-list {
+  width: 600px;
+}
+
+.logos {
+  display: inline-block;
+
+  img {
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+  }
 }

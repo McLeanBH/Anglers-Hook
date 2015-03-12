@@ -4,7 +4,7 @@
 
 * `HTML`
 <div class="mask">
-  <div class="loader" class="rotating"></div>
+  <div id="loader" class="rotating"></div>
 </div>
 
 * `JS`
@@ -24,7 +24,7 @@
   z-index: 100000;
 }
 
-.loader {
+#loader {
   background: url('/assets/img/loader.gif') center center no-repeat;
   height: 31px;
   width: 31px;

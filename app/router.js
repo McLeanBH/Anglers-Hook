@@ -12,6 +12,7 @@ Router.map(function() {
 
   this.route('segue', function() {
     this.route('view-one');
+    this.route('species-ref');
   });
 });
 

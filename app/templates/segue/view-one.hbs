@@ -6,10 +6,11 @@
       <li>{{link-to "Register" 'register'}}</li>
       <li>{{link-to "Login" 'login'}}</li>
       <li>{{link-to "View-1" 'segue.view-one'}}</li>
+      <li>{{link-to "Species" 'segue.species-ref'}}</li>
     </ul>
   </div>
 </div>
-
+{{outlet}}
   <header class="tabs-header">
     <h2>View-1</h2>
   </header>
@@ -30,13 +31,6 @@
               {{google-map latitude="34.851939" longitude="-82.399752"}}
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt sed, ipsa excepturi totam ex. Incidunt aut totam culpa a, ipsam, dolorum quas non veniam expedita, pariatur cum modi nihil?</p>
       </div>
-      <div class="right-wrapper-two">
-        <ul class="logo-list">
-          <li class="logos"><img src="/assets/img/marlin_logo.png"></li>
-          <li class="logos"><img src="/assets/img/sailfish_logo.png"></li>
-          <li class="logos"><img src="/assets/img/tuna_logo.png"></li>
-        </ul>
-      </div>
       <div class="tab-foot">
           <ul class="foot-list">
             <li class="footer-item" id="sv1">segue-view</li>
@@ -52,6 +46,4 @@
           </ul>
         </div>
     </div>
-
     <footer class="footer2"></footer>
-    {{outlet}}

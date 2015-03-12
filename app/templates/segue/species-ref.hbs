@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="nav-left"></div>
+  <div class="index-navbar">
+    <div class="nav-container">
+      <ul>
+        <li>{{link-to "Home" 'welcome'}}</li>
+        <li>{{link-to "Register" 'register'}}</li>
+        <li>{{link-to "Login" 'login'}}</li>
+        <li>{{link-to "View-1" 'segue.view-one'}}</li>
+        <li>{{link-to "Species" 'segue.species-ref'}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="top-border-div"></div>
+    <div class="species-wrapper">
+      <ul class="logo-list">
+        <li class="logos"><img src="/assets/img/marlin_logo.png"></li>
+        <li class="logos"><img src="/assets/img/sailfish_logo.png"></li>
+        <li class="logos"><img src="/assets/img/tuna_logo.png"></li>
+      </ul>
+    </div>
+</div>
+{{outlet}}

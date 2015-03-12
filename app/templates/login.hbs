@@ -12,11 +12,11 @@
   </div>
   <div class="top-border-div"></div>
   <div class="login">
-    <form class="login-form"{{action 'login' on='submit'}}>
+    <form class="login-form"{{action 'authenticate' on='submit'}}>
       <fieldset class="login-fieldset">
         <h1 class="login-header">Login</h1>
         <h4>Don't have an account? {{link-to "Create One Here" 'register'}}</h4>
-        {{input class="login-email login-field inputters" value=email placeholder="Email Address"}}
+        {{input class="login-email login-field inputters" value=identification type="email" placeholder="Email Address"}}
         {{input type="password" class="login-password login-field inputters" value=password placeholder="Password"}}
         <input type="submit" value="Login" class="login-button"/>
         <span>{{link-to "Forgot Your Password?" 'welcome'}}</span>

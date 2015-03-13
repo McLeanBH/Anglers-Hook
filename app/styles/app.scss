@@ -37,7 +37,7 @@ body {
 }
 
 .index-navbar {
-  border-bottom: 13px solid #fff;
+  border-bottom: 13px solid #396fd5;
   background: #fdb42c;
   height: 80px;
 
@@ -70,8 +70,8 @@ body {
 }
 
 .nav-left:hover {
-  transition: transform 0.9s ease-out;
   transform: rotate(360deg);
+  transition: transform .9s ease-out;
 }
 
 .nav-container {
@@ -82,12 +82,11 @@ body {
 
   a {
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 900;
     color: #000;
     font-family: 'Syncopate', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
   }
-
 }
 
 .welcome-wrapper {
@@ -111,32 +110,32 @@ body {
 
 .main-index-top::after {
   display: block;
-  background-color: rgba(0, 0, 0, 0.35);
-  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  background-color: rgba(0, 0, 0, .45);
+  content: '';
 }
 
 .welcome-buttons {
+  z-index: 100000;
   margin: 0 auto;
   margin-top: 350px;
-  z-index: 100000;
+  cursor: pointer;
   text-align: center;
   color: #fff;
-  cursor: pointer;
 }
 
 .welcomer {
+  cursor: pointer;
   width: 260px;
   height: 50px;
   text-align: center;
-  font-weight: 900;
-  color: #fff;
-  cursor: pointer;
   text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
 }
 
 .footer {
@@ -158,19 +157,19 @@ body {
 }
 
 .footer-icons:hover {
-  transition: transform 0.9s ease-out;
   transform: rotate(360deg);
+  transition: transform .9s ease-out;
 }
 
 .copy {
   margin: 0 auto;
   padding-top: 20px;
   padding-left: 45%;
-  font-family: 'PT Mono';
   color: #fff;
+  font-family: 'PT Mono';
 }
 
-/* LOGIN */
+/* LOGIN PAGE */
 
 .top-border-div {
   border-top: 13px solid #181818;
@@ -236,7 +235,7 @@ body {
   background-color: #eee;
 }
 
-/* REGISTRATION */
+/* REGISTRATION PAGE */
 
 .registration {
   margin: 60px auto;
@@ -276,7 +275,6 @@ body {
   color: #000;
   font-size: 16px;
   font-weight: bold;
-
 }
 
 .reg-fieldset {
@@ -306,22 +304,6 @@ body {
   border-left: 4px solid #000;
 }
 
-/* .section {
-  height: 300px;
-}
-
-.one,
-.three,
-.five {
-  background-color: #396fd5;
-}
-
-.two,
-.four {
-  background-color: #fbd42c;
-}
- */
-
  /* Segue - View-One */
 
 .left-content-wrapper,
@@ -337,11 +319,10 @@ body {
   width: 600px;
 }
 
-
 .map-canvas {
   margin: 0 auto;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .logo-list {

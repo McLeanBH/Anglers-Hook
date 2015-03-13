@@ -7,6 +7,9 @@ $gutter: em(57px);
   box-sizing: border-box;
 }
 
+$font-one: 'Gravitas One', cursive;
+
+
 /* .mask {
   background-color: #fff;
   width: 100%;
@@ -63,7 +66,7 @@ body {
   background: url('/assets/img/bluemarlinlogo.png') center center no-repeat;
   background-size: contain;
   width: 150px;
-  height: 70px;
+  height: 90px;
 }
 
 .nav-left:hover {
@@ -79,10 +82,10 @@ body {
 
   a {
     text-decoration: none;
-    font-family: 'Gravitas One', cursive;
     font-size: 16px;
     font-weight: 900;
-    color: #396fd5;
+    color: #000;
+    font-family: 'Syncopate', sans-serif;
   }
 
 }
@@ -98,11 +101,42 @@ body {
 }
 
 .main-index-top {
+  position: relative;
   border-top: 13px solid #181818;
   border-bottom: 13px solid #fff;
   background: url('/assets/img/island.jpg') center center no-repeat;
   background-size: cover;
   height: 800px;
+}
+
+.main-index-top::after {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.35);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.welcome-buttons {
+  margin: 0 auto;
+  margin-top: 350px;
+  z-index: 100000;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.welcomer {
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .footer {

@@ -13,7 +13,12 @@
   </div>
 </div>
 <div class="welcome-wrapper">
-  <div class="main-index-top"></div>
+  <div class="main-index-top">
+    <form class="welcome-buttons">
+      {{input class="welcomer wlogin" value=login placeholder='Login'}}
+      {{input class="welcomer wregister" value=reguster placeholder='Create An Account'}}
+    </form>
+  </div>
   <div class="main-index-bottom"></div>
 </div>
 {{outlet}}

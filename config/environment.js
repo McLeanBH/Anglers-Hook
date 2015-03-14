@@ -20,11 +20,11 @@ module.exports = function(environment) {
 
     contentSecurityPolicy: {
      'default-src': "'none'",
-     'script-src': "'self' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com",
-     'font-src': "'self' https://fonts.gstatic.com",
-     'connect-src': "http://api.parse.com",
-     'img-src': "'self' https://*.googleapis.com https://*.gstatic.com",
-     'style-src': "'self' 'unsafe-inline' https://*.googleapis.com",
+     'script-src': "'self'",
+     'font-src': "'self'",
+     'connect-src': "'self' 'http://api.parse.com'",
+     'img-src': "'self'",
+     'style-src': "'style-src' 'unsafe-inline' 'original-policy'",
      'media-src': "'self'"
    },
   };

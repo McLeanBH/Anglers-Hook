@@ -7,8 +7,6 @@ $gutter: em(57px);
   box-sizing: border-box;
 }
 
-$font-one: 'Gravitas One', cursive;
-
 body {
   margin: 0;
   padding: 0;
@@ -34,7 +32,6 @@ body {
     padding: 6px;
     text-decoration: none;
     color: #269fc3;
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
   }
 }
@@ -99,6 +96,24 @@ body {
   background: url('/assets/img/island.jpg') center center no-repeat;
   background-size: cover;
   height: 800px;
+
+  h1 {
+    padding-top: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 800;
+    font-size: 64px;
+  }
+
+  h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gravitas One', cursive;
+    color: #000;
+    font-weight: 800;
+    font-size: 32px;
+  }
 }
 
 .main-index-top::after {
@@ -108,14 +123,14 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .45);
+  background-color: rgba(0, 0, 0, .2);
   content: '';
 }
 
 .welcome-buttons {
   z-index: 100000;
   margin: 0 auto;
-  margin-top: 350px;
+  margin-top: 250px;
   cursor: pointer;
   text-align: center;
   color: #fff;
@@ -129,6 +144,16 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-weight: 900;
+}
+
+.welcomer::after {
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, .1);
+  content: '';
 }
 
 .footer {
@@ -160,6 +185,7 @@ body {
   padding-left: 45%;
   color: #fff;
   font-family: 'PT Mono';
+  text-transform: uppercase;
 }
 
 /* LOGIN PAGE */

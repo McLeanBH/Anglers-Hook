@@ -1,6 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  // model: function(params) {
+  //   var adapter = Weather-radarAdapter.create();
+  //   return adapter.find('weather-radar', params.weather-radar_id);
+  // }
 });
 
 // import Ember from 'ember';

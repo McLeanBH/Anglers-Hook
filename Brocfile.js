@@ -4,16 +4,30 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
-app.import('http://fonts.googleapis.com/css?family=PT+Mono', { destDir: 'fonts'});
-app.import('http://fonts.googleapis.com/css?family=Syncopate:400,700', { destDir: 'fonts'});
-app.import('http://fonts.googleapis.com/css?family=Gravitas+One', { destDir: 'fonts'});
-app.import('bower_components/weather-icons/font/weathericons-regular-webfont.eot', { destDir: 'fonts'});
-app.import('bower_components/weather-icons/font/weathericons-regular-webfont.svg', { destDir: 'fonts'});
-app.import('bower_components/weather-icons/font/weathericons-regular-webfont.ttf', { destDir: 'fonts'});
-app.import('bower_components/weather-icons/font/weathericons-regular-webfont.woff', { destDir: 'fonts'});
-app.import('bower_components/weather-icons/font/WeatherIcons-Regular.otf', { destDir: 'fonts'});
+app.import('bower_components/weather-icons/font/weathericons-regular-webfont.eot', {
+  destDir: 'fonts'
+});
+
+app.import('bower_components/weather-icons/font/weathericons-regular-webfont.svg', {
+  destDir: 'fonts'
+});
+
+app.import('bower_components/weather-icons/font/weathericons-regular-webfont.ttf', {
+  destDir: 'fonts'
+});
+
+app.import('bower_components/weather-icons/font/weathericons-regular-webfont.woff', {
+  destDir: 'fonts'
+});
+
+app.import('bower_components/weather-icons/font/WeatherIcons-Regular.otf', {
+  destDir: 'fonts'
+});
+
 app.import('bower_components/weather-icons/css/weather-icons.css');
-app.import('bower_components/jquery.simpleWeather.js');
+
+app.import('bower_components/simpleWeather/jquery.simpleWeather.js');
+
 app.import('vendor/gmaps.js');
 
 module.exports = app.toTree();

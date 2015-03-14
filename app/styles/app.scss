@@ -377,7 +377,6 @@ body {
 }
 
 .chart {
-  display: inline-block;
   margin: 0 auto;
 
   img {
@@ -387,6 +386,11 @@ body {
   }
 }
 
+.chart-1,
+.chart-3 {
+  padding-top: 50px;
+}
+
 .chart-2,
 .chart-3 {
   width: 35%;
@@ -394,19 +398,34 @@ body {
 }
 
 .chart-4 {
-  width: 650px;
+  margin: 0 auto;
 
   img {
     display: inline-block;
+    margin-left: 350px;
     padding-bottom: 25px;
-    width: 95%;
-    height: 90%;
+    padding-left: 200px;
+    width: 65%;
+    height: 65%;
   }
 }
 
-.chart-5 {
+/* .chart-5 {
   display: inline-block;
   padding-bottom: 190px;
   width: 60%;
   height: 85%;
+}
+ */
+
+ /* MEDIA PAGE */
+
+.media-list {
+  list-style: none;
+}
+
+.media-icons img {
+  margin: 20px 0 0 10px;
+  width: 100px;
+  height: 100px;
 }

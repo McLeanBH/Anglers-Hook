@@ -3,7 +3,6 @@
   <div class="index-navbar">
     <div class="nav-container">
       <ul>
-        <li>{{link-to "Home" 'welcome'}}</li>
         <li>{{link-to "Register" 'register'}}</li>
         <li>{{link-to "Login" 'login'}}</li>
         <li>{{link-to "Map (temp)" 'segue.view-one'}}</li>
@@ -14,12 +13,29 @@
     </div>
   </div>
   <div class="top-border-div"></div>
+  <div class="background-image">
     <div class="species-wrapper">
       <ul class="logo-list">
-        <li class="logos"><img src="/assets/img/marlin_logo.png"></li>
-        <li class="logos"><img src="/assets/img/sailfish_logo.png"></li>
-        <li class="logos"><img src="/assets/img/tuna_logo.png"></li>
+        <h3>
+
+          <a class="ids">
+            <img src="/assets/img/marlin_logo.png">
+          </a>
+
+          <a class="ids">-- Billfish Identifier -->
+          </a>
+
+          <a class="ids">
+            <img src="/assets/img/sailfish_logo.png">
+          </a>
+
+        </h3>
+        <br>
+        <li class="chart chart-1"><img src="/assets/img/species-1.png"></li>
+        <li class="chart chart-2"><img src="/assets/img/chart-3.jpg"></li>
+        <li class="chart chart-3"><img src="/assets/img/species-2.jpg"></li>
       </ul>
     </div>
+  </div>
 </div>
 {{outlet}}

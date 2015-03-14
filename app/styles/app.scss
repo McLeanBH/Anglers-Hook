@@ -37,7 +37,7 @@ body {
 }
 
 .index-navbar {
-  border-bottom: 13px solid #396fd5;
+  border-bottom: 13px solid #fff;
   background: #fdb42c;
   height: 80px;
 
@@ -325,28 +325,41 @@ body {
   height: 400px;
 }
 
+/* SPECIES-REF PAGE */
+
 .logo-list {
-  margin: 0;
-  width: 600px;
+  margin: 0 auto;
+  padding-top: 230px;
 
   li {
     display: inline-block;
   }
 }
 
-.species-wrapper {
-  margin: 0 auto;
-  width: 1000px;
+.background-image {
+  background: url('/assets/img/blue-running.png') center center no-repeat;
+  background-size: cover;
 }
 
-.logos {
-  margin: 0;
+.species-wrapper {
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.chart {
   display: inline-block;
+  margin: 0 auto;
 
   img {
-    margin: 0;
-    display: inline-block;
-    width: 40%;
-    height: 40%;
+    width: 95%;
+    height: 95%;
+    vertical-align: middle;
+    margin-bottom: 200px;
   }
+}
+
+.chart-2,
+.chart-3 {
+  width: 35%;
+  height: 35%;
 }

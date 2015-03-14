@@ -10,5 +10,4 @@ export default Ember.Object.extend({
     }
 });
 
-// "http://api.wunderground.com/api/d98a9b35b6b3cbd9/
-// animatedradar/animatedsatellite/geolookup/forecast/conditions/hourly/rawtide/tide/bestfct/q/autoip.gif.json"
+// "http://api.wunderground.com/api/d98a9b35b6b3cbd9/animatedradar/animatedsatellite/geolookup/forecast/conditions/hourly/rawtide/tide/bestfct/q/autoip.gif.json"

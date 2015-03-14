@@ -18,13 +18,13 @@ module.exports = function(environment) {
       // when it is created
     },
 
-    contentSecurityPolicy: {
-     'default-src': "'none'",
-     'script-src': "'self'",
-     'font-src': "'self'",
-     'connect-src': "'self' 'http://api.parse.com'",
-     'img-src': "'self'",
-     'style-src': "'style-src' 'unsafe-inline' 'original-policy'",
+  contentSecurityPolicy: {
+    'default-src': "'none'",
+     'script-src': "'self' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com",
+     'font-src': "'self' https://*.gstatic.com",
+     'connect-src': "http://api.parse.com",
+     'img-src': "'self' https://*.googleapis.com https://*.gstatic.com",
+    'style-src': "'self' 'unsafe-inline' https://*.googleapis.com",
      'media-src': "'self'"
    },
   };

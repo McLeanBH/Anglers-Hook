@@ -34,7 +34,6 @@
     "ember-cli-simple-auth": "0.7.3",
     "ember-cli-uglify": "1.0.1",
     "ember-cli-velocity": "^0.2.5",
-    "ember-cli-animate-css": "0.0.1",
     "ember-export-application-global": "^1.0.2",
     "express": "^4.8.5",
     "glob": "^4.0.5"

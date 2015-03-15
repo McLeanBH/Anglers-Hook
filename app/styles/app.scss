@@ -438,13 +438,25 @@ h5 {
 .media-icons {
   display: inline-block;
   margin: 0 auto;
-  margin-top: 190px;
-  margin-bottom: 220px;
-  padding-left: 260px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 5px;
 
   img {
-    margin: 220px 0 100px 10px;
-    width: 200px;
-    height: 200px;
+    margin: 20px 0 10px 10px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.wu-credit {
+  margin: 0 auto;
+  padding-top: 16px;
+  text-align: center;
+
+  img {
+    margin: 0 auto;
+    height: 100px;
+    vertical-align: middle;
   }
 }

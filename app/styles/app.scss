@@ -424,8 +424,27 @@ body {
   list-style: none;
 }
 
-.media-icons img {
-  margin: 20px 0 0 10px;
-  width: 100px;
-  height: 100px;
+h5 {
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .1em;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.media-icons {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 190px;
+  margin-bottom: 220px;
+  padding-left: 260px;
+
+  img {
+    margin: 220px 0 100px 10px;
+    width: 200px;
+    height: 200px;
+  }
 }

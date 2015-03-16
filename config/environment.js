@@ -20,7 +20,7 @@ module.exports = function(environment) {
 
   contentSecurityPolicy: {
     'default-src': "'none'",
-     'script-src': "'self' https://maps.googleapis.com https://maps.gstatic.com",
+     'script-src': "'self' https://*.googleapis.com https://*.gstatic.com",
      'font-src': "'self' http://fonts.gstatic.com",
      'connect-src': "'self' https://api.mixpanel.com http://api.parse.com",
      'img-src': "'self'",

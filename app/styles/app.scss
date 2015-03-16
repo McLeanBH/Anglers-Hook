@@ -197,7 +197,8 @@ body {
 .login {
   margin: 0 auto;
   margin-top: 12%;
-  background-color: #fff;
+  background: url('/assets/img/crowsview.jpg') center center no-repeat;
+  background-size: cover;
   width: 600px;
   text-align: center;
 }
@@ -526,6 +527,11 @@ body {
 }
 
  /* MEDIA PAGE */
+
+.forum-wrapper {
+  border-bottom: 13px solid #fff;
+  background-color: #396fd5;
+}
 
 .media-list {
   list-style: none;

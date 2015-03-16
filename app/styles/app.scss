@@ -86,7 +86,6 @@ body {
 .wrapper {
   border-bottom: 13px solid #fff;
   background-color: #396fd5;
-  min-height: 1000px;
 }
 
 .main-index-top {
@@ -183,9 +182,9 @@ body {
   margin: 0 auto;
   padding-top: 20px;
   padding-left: 45%;
+  text-transform: uppercase;
   color: #fff;
   font-family: 'PT Mono';
-  text-transform: uppercase;
 }
 
 /* LOGIN PAGE */
@@ -361,10 +360,12 @@ body {
   background: url('/assets/img/storm2.jpg') center center no-repeat;
   background-size: cover;
   height: 1100px;
+  border-bottom: 25px solid #fff;
 }
 
 .species-wrapper {
   margin: 0 auto;
+  height: 1100px;
 
   h1 {
     margin: 0;
@@ -410,13 +411,35 @@ body {
   }
 }
 
-/* .chart-5 {
-  display: inline-block;
-  padding-bottom: 190px;
-  width: 60%;
-  height: 85%;
+.species-list-2 {
+  margin: 0 auto;
+  list-style: none;
+  background: url('/assets/img/sunset.png') center center no-repeat;
+  background-size: cover;
 }
- */
+
+.marine-species,
+.marine-species img {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.msL {
+  padding-left: 50px;
+}
+
+.msR {
+  padding-left: 400px
+}
+
+.background-image-2 {
+  border-top: 25px solid #fdb42c;
+}
+
+
+
 
  /* MEDIA PAGE */
 

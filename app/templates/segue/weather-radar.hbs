@@ -19,8 +19,18 @@
       <div class="wu-credit">POWERED BY<br><img src="/assets/img/wu-s.png"></div>
       <div class="weather">
         <ul>
-          <li></li>
+          <li><p>Temperature:   {{model.current_observation.temperature_string}}</p></li>
+          <!-- <li><p>{{model.current_observation.icon}}</li> -->
+          <li><p>Feels Like:   {{model.current_observation.feelslike_string}}</p></li>
+          <li><p>Location:   {{model.current_observation.display_location.full}}</p></li>
+          <li><p>Latitude:   {{model.current_observation.display_location.latitude}}</p></li>
+          <li><p>Longitude:   {{model.current_observation.display_location.longitude}}</p></li>
+          <li><p>Weather:   {{model.current_observation.weather}}</p></li>
+          <li><p>Wind Direction:   {{model.current_observation.wind_dir}}</p></li>
+          <li><p>Visibility (Miles):   {{model.current_observation.visibility_mi}}</p></li>
+          <li><p>Wind Gusts:   {{model.current_observation.wind_string}}</p></li>
         </ul>
+      <div class="weather-radar-container"><img {{bind-attr src=radarUrl}}></div>
       </div>
     </div>
 </div>

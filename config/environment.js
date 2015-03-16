@@ -20,16 +20,17 @@ module.exports = function(environment) {
 
   contentSecurityPolicy: {
     'default-src': "'none'",
-     'script-src': "'self' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com",
-     'font-src': "'self' https://*.gstatic.com",
-     'connect-src': "http://api.parse.com",
-     'img-src': "'self' https://*.googleapis.com https://*.gstatic.com",
-    'style-src': "'self' 'unsafe-inline' https://*.googleapis.com",
+     'script-src': "'self' https://maps.googleapis.com https://maps.gstatic.com",
+     'font-src': "'self' http://fonts.gstatic.com",
+     'connect-src': "'self' https://api.mixpanel.com http://api.parse.com",
+     'img-src': "'self'",
+     'style-src': "'self' 'unsafe-inline'",
      'media-src': "'self'"
    },
   };
 
   if (environment === 'development') {
+    ENV.contentSecurityPolicy['script-src'] = ENV.contentSecurityPolicy['script-src'] + " 'unsafe-eval'";
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;

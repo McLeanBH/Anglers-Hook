@@ -69,6 +69,7 @@
           <li class="weather-stats"><p>Wind Direction:   {{model.current_observation.wind_dir}} |</p></li>
           <li class="weather-stats"><p>Visibility (Miles):   {{model.current_observation.visibility_mi}} |</p></li><br>
           <li class="weather-stats"><p>Wind Gusts:   {{model.current_observation.wind_string}} |</p></li><br>
+          <li class="weather-stats"><p>Pretty: {{model.forecast.simpleforecast.forecastday.[0].date.pretty}}</p></li>
         </ul>
       <div class="weather-radar-container"><img {{bind-attr src=radarUrl}}></div>
       <div class="location">Location: Greenville, SC</div>

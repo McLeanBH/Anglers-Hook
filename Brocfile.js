@@ -4,23 +4,23 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp();
 
 app.import('bower_components/weather-icons/font/weathericons-regular-webfont.eot', {
-  destDir: 'fonts'
+  destDir: 'assets/fonts'
 });
 
 app.import('bower_components/weather-icons/font/weathericons-regular-webfont.svg', {
-  destDir: 'fonts'
+  destDir: 'assets/fonts'
 });
 
 app.import('bower_components/weather-icons/font/weathericons-regular-webfont.ttf', {
-  destDir: 'fonts'
+  destDir: 'assets/fonts'
 });
 
 app.import('bower_components/weather-icons/font/weathericons-regular-webfont.woff', {
-  destDir: 'fonts'
+  destDir: 'assets/fonts'
 });
 
 app.import('bower_components/weather-icons/font/WeatherIcons-Regular.otf', {
-  destDir: 'fonts'
+  destDir: 'assets/fonts'
 });
 
 app.import('bower_components/weather-icons/css/weather-icons.css');

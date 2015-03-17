@@ -582,13 +582,14 @@ h5 {
 
 .weather-wrapper {
   margin: 0 auto;
-  background: url('/assets/img/heavyseas.jpg') center center no-repeat;
+  background: url('/assets/img/the-keys.png') center center no-repeat;
+  background-size: cover;
   background-color: #396fd5;
-  background-size: center;
   min-height: 1100px;
 }
 
 .weather-radar-container {
+  display: inline-block;
   margin-left: 23%;
   border-radius: 85%;
   width: 55%;
@@ -600,7 +601,7 @@ h5 {
     border-radius: 80%;
     background-color: #f8fb92;
     width: 75%;
-    height: 75%;
+    height: 95%;
   }
 }
 
@@ -615,6 +616,14 @@ h5 {
 
 .weather-stats {
   display: inline-block;
+  color: #000;
+  font-size: 24px;
+  font-weight: 800;
+
+  p {
+    margin: 0;
+    line-height: 2.5;
+  }
 }
 
 .weather-icons-list {
@@ -629,5 +638,10 @@ h5 {
 }
 
 .statistics {
-  list-style-type: square;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.weather-room-header {
+  margin: 0;
 }

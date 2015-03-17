@@ -14,66 +14,65 @@
   </div>
   <div class="top-border-div"></div>
     <div class="weather-wrapper">
-      <h1 contenteditable="" style="text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb(187, 187, 187) 0px 3px 0px, rgb(185, 185, 185) 0px 4px 0px, rgb(170, 170, 170) 0px 5px 0px, rgba(0, 0, 0, 0.0980392) 0px 6px 1px, rgba(0, 0, 0, 0.0980392) 0px 0px 5px, rgba(0, 0, 0, 0.298039) 0px 1px 3px, rgba(0, 0, 0, 0.2) 0px 3px 5px, rgba(0, 0, 0, 0.247059) 0px 5px 10px, rgba(0, 0, 0, 0.2) 0px 10px 10px, rgba(0, 0, 0, 0.14902) 0px 20px 20px;">Weather Room</h1>
+      <h1 class="weather-room-header" contenteditable="" style="text-align: center; font-size: 64px; color: #fff; text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb(187, 187, 187) 0px 3px 0px, rgb(185, 185, 185) 0px 4px 0px, rgb(170, 170, 170) 0px 5px 0px, rgba(0, 0, 0, 0.0980392) 0px 6px 1px, rgba(0, 0, 0, 0.0980392) 0px 0px 5px, rgba(0, 0, 0, 0.298039) 0px 1px 3px, rgba(0, 0, 0, 0.2) 0px 3px 5px, rgba(0, 0, 0, 0.247059) 0px 5px 10px, rgba(0, 0, 0, 0.2) 0px 10px 10px, rgba(0, 0, 0, 0.14902) 0px 20px 20px;">Weather Room</h1>
+      <ul class="weather-icons-list">
+        <li class="wis"><i class="wi wi-day-lightning"></i></li>
+        <li class="wis"><i class="wi wi-thermometer"></i></li>
+        <li class="wis"><i class="wi wi-sunset"></i></li>
+        <li class="wis"><i class="wi wi-time-12"></i></li>
+        <li class="wis"><i class="wi wi-time-11"></i></li>
+        <li class="wis"><i class="wi wi-time-10"></i></li>
+        <li class="wis"><i class="wi wi-time-9"></i></li>
+        <li class="wis"><i class="wi wi-time-8"></i></li>
+        <li class="wis"><i class="wi wi-time-7"></i></li>
+        <li class="wis"><i class="wi wi-time-6"></i></li>
+        <li class="wis"><i class="wi wi-time-5"></i></li>
+        <li class="wis"><i class="wi wi-time-4"></i></li>
+        <li class="wis"><i class="wi wi-time-3"></i></li>
+        <li class="wis"><i class="wi wi-time-2"></i></li>
+        <li class="wis"><i class="wi wi-time-1"></i></li>
+        <li class="wis"><i class="wi wi-day-sunny"></i></li>
+        <li class="wis"><i class="wi wi-day-lightning"></i></li>
+        <li class="wis"><i class="wi wi-day-cloudy"></i></li>
+        <li class="wis"><i class="wi wi-day-cloudy-gusts"></i></li>
+        <li class="wis"><i class="wi wi-day-cloudy-windy"></i></li>
+        <li class="wis"><i class="wi wi-day-cloudy"></i></li>
+        <li class="wis"><i class="wi wi-day-rain-mix"></i></li>
+        <li class="wis"><i class="wi wi-day-showers"></i></li>
+        <li class="wis"><i class="wi wi-day-sunny-overcast"></i></li>
+        <li class="wis"><i class="wi wi-day-storm-showers"></i></li>
+        <li class="wis"><i class="wi wi-day-thunderstorm"></i></li>
+        <li class="wis"><i class="wi wi-moon-full"></i></li>
+        <li class="wis"><i class="wi wi-umbrella"></i></li>
+        <li class="wis"><i class="wi wi-moon-waning-crescent-3"></i></li>
+        <li class="wis"><i class="wi wi-moon-waning-crescent-6"></i></li>
+        <li class="wis"><i class="wi wi-moon-3rd-quarter"></i></li>
+        <li class="wis"><i class="wi wi-moon-first-quarter"></i></li>
+        <li class="wis"><i class="wi wi-moon-waxing-cresent-6"></i></li>
+        <li class="wis"><i class="wi wi-moon-waxing-cresent-3"></i></li>
+        <li class="wis"><i class="wi wi-moon-waxing-cresent-1"></i></li>
+        <li class="wis"><i class="wi wi-horizon"></i></li>
+        <li class="wis"><i class="wi wi-lightning"></i></li>
+        <li class="wis"><i class="wi wi-sunrise"></i></li>
+        <li class="wis"><i class="wi wi-cloud"></i></li>
+        <li class="wis"><i class="wi wi-fahrenheit"></i></li>
+      </ul>
       <div class="wu-credit">POWERED BY<br><img src="/assets/img/wu-s.png"></div>
       <div class="weather">
         <ul class="statistics">
-          <li class="weather-stats"><p>Temperature:   {{model.current_observation.temperature_string}}</p></li>
-          <li class="weather-stats"><p>Feels Like:   {{model.current_observation.feelslike_string}}</p></li>
-          <li class="weather-stats"><p>Location:   {{model.current_observation.display_location.full}}</p></li><br>
-          <li class="weather-stats"><p>Latitude:   {{model.current_observation.display_location.latitude}}</p></li>
-          <li class="weather-stats"><p>Longitude:   {{model.current_observation.display_location.longitude}}</p></li>
-          <li class="weather-stats"><p>Weather:   {{model.current_observation.weather}}</p></li><br>
-          <li class="weather-stats"><p>Wind Direction:   {{model.current_observation.wind_dir}}</p></li>
-          <li class="weather-stats"><p>Visibility (Miles):   {{model.current_observation.visibility_mi}}</p></li>
-          <li class="weather-stats"><p>Wind Gusts:   {{model.current_observation.wind_string}}</p></li><br>
+          <li class="weather-stats"><p>Temperature:   {{model.current_observation.temperature_string}} |</p></li>
+          <li class="weather-stats"><p>Feels Like:   {{model.current_observation.feelslike_string}} |</p></li><br>
+          <li class="weather-stats"><p>Location:   {{model.current_observation.display_location.full}} |</p></li>
+          <li class="weather-stats"><p>Latitude:   {{model.current_observation.display_location.latitude}} |</p></li><br>
+          <li class="weather-stats"><p>Longitude:   {{model.current_observation.display_location.longitude}} |</p></li>
+          <li class="weather-stats"><p>Weather:   {{model.current_observation.weather}} |</p></li><br>
+          <li class="weather-stats"><p>Wind Direction:   {{model.current_observation.wind_dir}} |</p></li>
+          <li class="weather-stats"><p>Visibility (Miles):   {{model.current_observation.visibility_mi}} |</p></li><br>
+          <li class="weather-stats"><p>Wind Gusts:   {{model.current_observation.wind_string}} |</p></li><br>
         </ul>
-
       <div class="weather-radar-container"><img {{bind-attr src=radarUrl}}></div>
       <div class="location">Location: Greenville, SC</div>
-        <ul class="weather-icons-list">
-          <li class="wis"><i class="wi wi-day-lightning"></i></li>
-          <li class="wis"><i class="wi wi-thermometer"></i></li>
-          <li class="wis"><i class="wi wi-sunset"></i></li>
-          <li class="wis"><i class="wi wi-time-12"></i></li>
-          <li class="wis"><i class="wi wi-time-11"></i></li>
-          <li class="wis"><i class="wi wi-time-10"></i></li>
-          <li class="wis"><i class="wi wi-time-9"></i></li>
-          <li class="wis"><i class="wi wi-time-8"></i></li>
-          <li class="wis"><i class="wi wi-time-7"></i></li>
-          <li class="wis"><i class="wi wi-time-6"></i></li>
-          <li class="wis"><i class="wi wi-time-5"></i></li>
-          <li class="wis"><i class="wi wi-time-4"></i></li>
-          <li class="wis"><i class="wi wi-time-3"></i></li>
-          <li class="wis"><i class="wi wi-time-2"></i></li>
-          <li class="wis"><i class="wi wi-time-1"></i></li>
-          <li class="wis"><i class="wi wi-day-sunny"></i></li>
-          <li class="wis"><i class="wi wi-day-lightning"></i></li>
-          <li class="wis"><i class="wi wi-day-cloudy"></i></li>
-          <li class="wis"><i class="wi wi-day-cloudy-gusts"></i></li>
-          <li class="wis"><i class="wi wi-day-cloudy-windy"></i></li>
-          <li class="wis"><i class="wi wi-day-cloudy"></i></li>
-          <li class="wis"><i class="wi wi-day-rain-mix"></i></li>
-          <li class="wis"><i class="wi wi-day-showers"></i></li>
-          <li class="wis"><i class="wi wi-day-sunny-overcast"></i></li>
-          <li class="wis"><i class="wi wi-day-storm-showers"></i></li>
-          <li class="wis"><i class="wi wi-day-thunderstorm"></i></li>
-          <li class="wis"><i class="wi wi-moon-full"></i></li>
-          <li class="wis"><i class="wi wi-umbrella"></i></li>
-          <li class="wis"><i class="wi wi-moon-waning-crescent-3"></i></li>
-          <li class="wis"><i class="wi wi-moon-waning-crescent-6"></i></li>
-          <li class="wis"><i class="wi wi-moon-3rd-quarter"></i></li>
-          <li class="wis"><i class="wi wi-moon-first-quarter"></i></li>
-          <li class="wis"><i class="wi wi-moon-waxing-cresent-6"></i></li>
-          <li class="wis"><i class="wi wi-moon-waxing-cresent-3"></i></li>
-          <li class="wis"><i class="wi wi-moon-waxing-cresent-1"></i></li>
-          <li class="wis"><i class="wi wi-horizon"></i></li>
-          <li class="wis"><i class="wi wi-lightning"></i></li>
-          <li class="wis"><i class="wi wi-sunrise"></i></li>
-          <li class="wis"><i class="wi wi-cloud"></i></li>
-          <li class="wis"><i class="wi wi-fahrenheit"></i></li>
-        </ul>
-      </div>
+    </div>
     </div>
 </div>
 {{outlet}}

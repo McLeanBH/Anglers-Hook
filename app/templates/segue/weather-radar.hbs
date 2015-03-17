@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="weather-radar-wrapper">
   <div class="index-navbar">
     <div class="nav-left"></div>
     <div class="home-btn">{{link-to "Home" 'welcome'}}</div>
@@ -13,12 +13,12 @@
     </div>
   </div>
   <div class="top-border-div"></div>
-    <div class="species-wrapper">
+    <div class="weather-wrapper">
       <h1 contenteditable="" style="text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb(187, 187, 187) 0px 3px 0px, rgb(185, 185, 185) 0px 4px 0px, rgb(170, 170, 170) 0px 5px 0px, rgba(0, 0, 0, 0.0980392) 0px 6px 1px, rgba(0, 0, 0, 0.0980392) 0px 0px 5px, rgba(0, 0, 0, 0.298039) 0px 1px 3px, rgba(0, 0, 0, 0.2) 0px 3px 5px, rgba(0, 0, 0, 0.247059) 0px 5px 10px, rgba(0, 0, 0, 0.2) 0px 10px 10px, rgba(0, 0, 0, 0.14902) 0px 20px 20px;">Weather Room</h1>
       <div class="wu-credit">POWERED BY<br><img src="/assets/img/wu-s.png"></div>
       <div class="weather">
         <ul>
-          <li><p>Temperature:   {{model.current_observation.temperature_string}}</p></li>
+          <!-- <li><p>Temperature:   {{model.current_observation.temperature_string}}</p></li>
           <li><p>Feels Like:   {{model.current_observation.feelslike_string}}</p></li>
           <li><p>Location:   {{model.current_observation.display_location.full}}</p></li>
           <li><p>Latitude:   {{model.current_observation.display_location.latitude}}</p></li>
@@ -26,9 +26,11 @@
           <li><p>Weather:   {{model.current_observation.weather}}</p></li>
           <li><p>Wind Direction:   {{model.current_observation.wind_dir}}</p></li>
           <li><p>Visibility (Miles):   {{model.current_observation.visibility_mi}}</p></li>
-          <li><p>Wind Gusts:   {{model.current_observation.wind_string}}</p></li>
+          <li><p>Wind Gusts:   {{model.current_observation.wind_string}}</p></li>  -->
         </ul>
       <div class="weather-radar-container"><img {{bind-attr src=radarUrl}}></div>
+      <div class="location">Location: Greenville, SC</div>
+
       </div>
     </div>
 </div>

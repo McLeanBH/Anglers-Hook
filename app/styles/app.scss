@@ -573,3 +573,41 @@ h5 {
     vertical-align: middle;
   }
 }
+
+/* WEATHER-RADAR */
+
+.weather-radar-wrapper {
+  min-height: 1100px;
+}
+
+.weather-wrapper {
+  background: url('/assets/img/.png') center center no-repeat;
+  background-size: center;
+  background-color: #396fd5;
+  margin: 0 auto;
+  height: 1100px;
+}
+
+.weather-radar-container {
+  margin-left: 19%;
+  border-radius: 80%;
+  width: 65%;
+  height: 65%;
+}
+
+
+.weather-radar-container img {
+  margin-left: 10%;
+  border-radius: 80%;
+  width: 75%;
+  height: 75%;
+}
+
+.weather {
+  min-height: 1100px;
+  margin: 0;
+}
+
+.location {
+  text-align: center;
+}

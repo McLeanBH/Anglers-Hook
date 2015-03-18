@@ -5,3 +5,9 @@ export default Ember.Route.extend({
     return this.store.findQuery('weather-data');
   },
 });
+
+
+  // beforeModel: function () {
+  //   throw new Error("Something bad happened!");
+  // },
+  //

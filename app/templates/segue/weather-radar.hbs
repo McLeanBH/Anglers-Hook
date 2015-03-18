@@ -60,16 +60,41 @@
       <div class="wu-credit">POWERED BY<br><img src="/assets/img/wu-s.png"></div>
       <div class="weather">
         <ul class="statistics">
-          <li class="weather-stats"><p>Temperature:   {{model.current_observation.temperature_string}} |</p></li>
-          <li class="weather-stats"><p>Feels Like:   {{model.current_observation.feelslike_string}} |</p></li><br>
-          <li class="weather-stats"><p>Location:   {{model.current_observation.display_location.full}} |</p></li>
-          <li class="weather-stats"><p>Latitude:   {{model.current_observation.display_location.latitude}} |</p></li><br>
-          <li class="weather-stats"><p>Longitude:   {{model.current_observation.display_location.longitude}} |</p></li>
-          <li class="weather-stats"><p>Weather:   {{model.current_observation.weather}} |</p></li><br>
-          <li class="weather-stats"><p>Wind Direction:   {{model.current_observation.wind_dir}} |</p></li>
-          <li class="weather-stats"><p>Visibility (Miles):   {{model.current_observation.visibility_mi}} |</p></li><br>
-          <li class="weather-stats"><p>Wind Gusts:   {{model.current_observation.wind_string}} |</p></li><br>
-          <li class="weather-stats"><p>Pretty: {{model.forecast.simpleforecast.forecastday.[0].date.pretty}}</p></li>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[0].date.weekday}}</p></li>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[0].date.pretty}}</p></li>
+          <br>
+          <li class="weather-stats"><p>Location: {{model.current_observation.display_location.full}}</p></li>
+          <li class="weather-stats"><p>Latitude: {{model.current_observation.display_location.latitude}}</p></li>
+          <li class="weather-stats"><p>Longitude: {{model.current_observation.display_location.longitude}}</p></li>
+          <br>
+          <li class="weather-stats"><p>Temperature: {{model.current_observation.temperature_string}} --</p></li>
+          <li class="weather-stats"><p>Feels Like: {{model.current_observation.feelslike_string}} --</p></li>
+          <li class="weather-stats"><p>Weather: {{model.current_observation.weather}}</p></li>
+          <br>
+          <li class="weather-stats"><p>High: {{model.forecast.simpleforecast.forecastday.[0].high.fahrenheit}} --</p></li>
+          <li class="weather-stats"><p>Low: {{model.forecast.simpleforecast.forecastday.[0].low.fahrenheit}}</p></li>
+          <br>
+          <li class="weather-stats"><p>Wind Direction: {{model.current_observation.wind_dir}} --</p></li>
+          <li class="weather-stats"><p>Visibility (Miles): {{model.current_observation.visibility_mi}} --</p></li>
+          <li class="weather-stats"><p>Wind Gusts: {{model.current_observation.wind_string}} --</p></li>
+          <br>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[1].date.weekday}}</p></li>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[1].date.pretty}}</p></li>
+          <br>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[2].date.weekday}}</p></li>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[2].date.pretty}}</p></li>
+          <br>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[3].date.weekday}}</p></li>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[3].date.pretty}}</p></li>
+          <br>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[4].date.weekday}}</p></li>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[4].date.pretty}}</p></li>
+          <br>
+          <!-- <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[0].date.pretty}}</p></li>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[0].date.pretty}}</p></li>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[0].date.pretty}}</p></li>
+          <li class="weather-stats"><p>{{model.forecast.simpleforecast.forecastday.[0].date.pretty}}</p></li> -->
+
         </ul>
       <div class="weather-radar-container"><img {{bind-attr src=radarUrl}}></div>
       <div class="location">Location: Greenville, SC</div>

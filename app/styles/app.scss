@@ -32,7 +32,7 @@ body {
     padding: 6px;
     text-decoration: none;
     color: #269fc3;
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -53,8 +53,8 @@ body {
     text-decoration: none;
     color: #000;
     font-family: 'Syncopate', sans-serif;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
   }
 }
 
@@ -74,8 +74,8 @@ body {
     text-decoration: none;
     color: #000;
     font-family: 'Syncopate', sans-serif;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
   }
 }
 
@@ -165,14 +165,18 @@ body {
 
 .footer-list {
   margin: 0 auto;
-  text-align: center;
   padding-top: 20px;
   list-style: none;
+  text-align: center;
 }
 
 .footer-icons {
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 10px;
+
+  img {
+    height: 30px;
+  }
 }
 
 .footer-icons:hover {
@@ -182,11 +186,12 @@ body {
 
 .copy {
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
   font-family: 'PT Mono';
+  font-size: 10px;
 }
 
 /* LOGIN PAGE */

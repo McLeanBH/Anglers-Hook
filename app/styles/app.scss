@@ -197,8 +197,9 @@ body {
 .login {
   margin: 0 auto;
   margin-top: 12%;
-  background: url('/assets/img/crowsview.jpg') center center no-repeat;
-  background-size: cover;
+  background-color: #fff;
+  /* background: url('/assets/img/crowsview.jpg') center center no-repeat;
+  background-size: cover; */
   width: 600px;
   text-align: center;
 }
@@ -644,4 +645,23 @@ h5 {
 
 .weather-room-header {
   margin: 0;
+}
+
+.mask {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100000;
+}
+
+#loader {
+  background: url('/assets/img/loader.gif') center center no-repeat;
+  height: 31px;
+  width: 31px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  z-index: 100001;
+  margin: -15px 0 0 -15px;
 }

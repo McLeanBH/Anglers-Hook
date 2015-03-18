@@ -164,8 +164,9 @@ body {
 }
 
 .footer-list {
+  margin: 0 auto;
+  text-align: center;
   padding-top: 20px;
-  padding-left: 640px;
   list-style: none;
 }
 
@@ -182,7 +183,7 @@ body {
 .copy {
   margin: 0 auto;
   padding-top: 20px;
-  padding-left: 45%;
+  text-align: center;
   text-transform: uppercase;
   color: #fff;
   font-family: 'PT Mono';
@@ -629,7 +630,7 @@ h5 {
 @mixin fill-parent() {
   display: inline-block;
   color: #000;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 800;
   margin: 0;
   line-height: 2;
@@ -669,28 +670,36 @@ h5 {
 }
 
 .weather-box-data {
-  background-color: #FDB42C;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  background-color: #fdb42c;
   width: 80%;
   text-align: center;
-  margin: 0 auto;
 }
 
 .weather-data-form {
+  border: 5px solid #fff;
   background-color: #396fd5;
 }
 
 .forecast {
-  background-color: #FDB42C;
+  background-color: #fdb42c;
 }
 
 .wu-credit {
   margin: 0 auto;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   text-align: center;
 
   img {
     margin: 0 auto;
-    height: 100px;
+    height: 80px;
     vertical-align: middle;
   }
+}
+
+.search-field {
+  @include fill-parent;
+  border: 2px solid #000;
+  text-align: center;
 }

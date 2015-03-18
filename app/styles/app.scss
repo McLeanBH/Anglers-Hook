@@ -563,17 +563,28 @@ h5 {
   }
 }
 
-.wu-credit {
-  margin: 0 auto;
-  padding-top: 16px;
-  text-align: center;
+/* LOADING ROUTE */
 
-  img {
-    margin: 0 auto;
-    height: 100px;
-    vertical-align: middle;
-  }
+.mask {
+  position: fixed;
+  z-index: 100000;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+
 }
+
+#loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100001;
+  margin: -15px 0 0 -15px;
+  background: url('/assets/img/loader.gif') center center no-repeat;
+  width: 31px;
+  height: 31px;
+}
+
 
 /* WEATHER-RADAR */
 
@@ -584,43 +595,56 @@ h5 {
 .weather-wrapper {
   margin: 0 auto;
   background: url('/assets/img/the-keys.png') center center no-repeat;
-  background-size: cover;
   background-color: #396fd5;
+  background-size: cover;
   min-height: 1100px;
 }
 
 .weather-radar-container {
   display: inline-block;
-  margin-left: 29%;
-  border-radius: 85%;
+  margin: 5%;
+  margin-top: 1%;
+  border-radius: 65%;
+  text-align: center;
 
 
   img {
-    margin-left: 10%;
     border: 13px solid #000;
-    border-radius: 80%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 80%;
     background-color: #f8fb92;
   }
 }
 
 .weather {
   margin: 0;
-  min-height: 1100px;
 }
 
 .location {
   text-align: center;
 }
 
-.weather-stats {
+@mixin fill-parent() {
   display: inline-block;
   color: #000;
   font-size: 24px;
   font-weight: 800;
+  margin: 0;
+  line-height: 2;
+  letter-spacing: .059em;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.weather-stats,
+.location-stats,
+.date-stats {
+  @include fill-parent;
 
   p {
     margin: 0;
-    line-height: 2.5;
+    line-height: 2;
   }
 }
 
@@ -644,21 +668,29 @@ h5 {
   margin: 0;
 }
 
-.mask {
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 100000;
+.weather-box-data {
+  background-color: #FDB42C;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
 }
 
-#loader {
-  background: url('/assets/img/loader.gif') center center no-repeat;
-  height: 31px;
-  width: 31px;
-  left: 50%;
-  top: 50%;
-  position: absolute;
-  z-index: 100001;
-  margin: -15px 0 0 -15px;
+.weather-data-form {
+  background-color: #396fd5;
+}
+
+.forecast {
+  background-color: #FDB42C;
+}
+
+.wu-credit {
+  margin: 0 auto;
+  padding-bottom: 5px;
+  text-align: center;
+
+  img {
+    margin: 0 auto;
+    height: 100px;
+    vertical-align: middle;
+  }
 }

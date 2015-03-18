@@ -159,7 +159,7 @@ body {
 .footer {
   border-top: 13px solid #fbb33d;
   background-color: #181818;
-  height: 190px;
+  height: 90px;
   color: #fff;
 }
 
@@ -204,8 +204,8 @@ body {
   margin: 0 auto;
   margin-top: 12%;
   background-color: #fff;
-  /* background: url('/assets/img/crowsview.jpg') center center no-repeat;
-  background-size: cover; */
+  background: url('/assets/img/crowsview.jpg') center center no-repeat;
+  background-size: cover;
   width: 600px;
   text-align: center;
 }
@@ -249,6 +249,7 @@ body {
   color: #000;
   font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .login-fieldset {
@@ -302,6 +303,7 @@ body {
   color: #000;
   font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .reg-fieldset {
@@ -369,12 +371,12 @@ body {
   border-bottom: 16px solid #fff;
   background: url('/assets/img/storm2.jpg') center center no-repeat;
   background-size: cover;
-  height: 1100px;
+  height: 800px;
 }
 
 .species-wrapper {
   margin: 0 auto;
-  height: 1100px;
+  height: 800px;
 
   h1 {
     margin: 0;
@@ -390,33 +392,30 @@ body {
   margin: 0 auto;
 
   img {
-    width: 95%;
-    height: 95%;
+    width: 55%;
+    height: 55%;
     vertical-align: middle;
   }
 }
 
-.chart-1,
-.chart-3 {
-  padding-top: 50px;
-}
-
-.chart-2,
-.chart-3 {
-  width: 35%;
-  height: 35%;
-}
+/* .chart-2, .chart-2 img,
+.chart-3, .chart-3 img {
+  display: inline-block;
+  width: 55%;
+  height: 55%;
+} */
 
 .chart-4 {
   margin: 0 auto;
 
   img {
+    margin: 0 auto;
+    text-align: center;
     display: inline-block;
-    margin-left: 350px;
     padding-bottom: 25px;
-    padding-left: 200px;
-    width: 65%;
-    height: 65%;
+    padding-left: 27.5%;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -600,7 +599,7 @@ h5 {
 
 .weather-wrapper {
   margin: 0 auto;
-  background: url('/assets/img/the-keys.png') center center no-repeat;
+  background: url('/assets/img/splash.jpg') center center no-repeat;
   background-color: #396fd5;
   background-size: cover;
   min-height: 1100px;
@@ -613,7 +612,6 @@ h5 {
   border-radius: 65%;
   text-align: center;
 
-
   img {
     border: 13px solid #000;
     border-top-left-radius: 20%;
@@ -621,6 +619,7 @@ h5 {
     border-bottom-left-radius: 80%;
     border-bottom-right-radius: 80%;
     background-color: #f8fb92;
+    text-align: left;
   }
 }
 
@@ -672,6 +671,7 @@ h5 {
 
 .weather-room-header {
   margin: 0;
+  color: #000;
 }
 
 .weather-box-data {
@@ -685,6 +685,9 @@ h5 {
 .weather-data-form {
   border: 5px solid #fff;
   background-color: #396fd5;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
 }
 
 .forecast {
@@ -693,8 +696,10 @@ h5 {
 
 .wu-credit {
   margin: 0 auto;
+  padding-top: 10px;
   padding-bottom: 2px;
   text-align: center;
+  color: #fff;
 
   img {
     margin: 0 auto;

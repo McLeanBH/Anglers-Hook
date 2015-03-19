@@ -27,6 +27,16 @@ module.exports = function(environment) {
      'style-src': "'self' 'unsafe-inline' https://*.googleapis.com http://*.googleapis.com",
      'media-src': "'self'"
    },
+
+   'simple-auth': {
+     authorizer: 'authorizer:parse',
+     crossOriginWhitelist: ['https://api.parse.com']
+   },
+
+   parseKeys: {
+     applicationId: "qBQnGMkwKJIbp3cCVApnMjRBCSezpmu8rSbV7M1I",
+     restApi: "vyaxQsffU5lNaiG5henoGBTaQ1FcEyzmhFxOeVKK"
+   }
   };
 
   if (environment === 'development') {

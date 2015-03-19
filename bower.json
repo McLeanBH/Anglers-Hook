@@ -16,6 +16,7 @@
     "neat": "~1.7.1",
     "weather-icons": "~1.3.2",
     "ember-simple-auth": "0.7.3",
-    "simpleWeather": "~3.0.2"
+    "simpleWeather": "~3.0.2",
+    "photoswipe": "4.0.6"
   }
 }

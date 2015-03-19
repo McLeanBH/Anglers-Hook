@@ -11,13 +11,15 @@ Router.map(function() {
   this.route('register');
 
   this.route('segue', function() {
-    this.route('view-one');
+    this.route('dashboard');
     this.route('species-ref');
     this.route('weather-radar', function() {
       this.route('loading');
     });
     this.route('forum');
   });
+  this.route('search');
+  this.route('show');
 });
 
 export default Router;

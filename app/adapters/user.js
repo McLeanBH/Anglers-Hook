@@ -48,19 +48,20 @@ export default Ember.Object.extend({
       return ajax({
         url: "https://api.parse.com/1/users" + record.id,
         type: "PUT",
-        data: JSON.stringify(record)
+        data: JSON.stringify(record.toJSON())
       }).then(function(response){
-        response.id = response.ObjectId;
-        delete response.objectId;
-        return response;
+        record.updatedAt = response.updatedAt;
+        return record;
       });
     }else {
       return ajax({
         url: "https://api.parse.com/1/users",
         type: "POST",
-        data: JSON.stringify(record)
+        data: JSON.stringify(record.toJSON())
       }).then(function(response){
-        record.updatedAt = response.updatedAt;
+        record.id = response.objectId;
+        record.createAt = response.createdAt;
+        record.sessionToken = response.sessionToken;
         return record;
       });
     }

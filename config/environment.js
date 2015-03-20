@@ -22,7 +22,7 @@ module.exports = function(environment) {
     'default-src': "'none'",
      'script-src': "'self' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com http://api.wunderground.com",
      'font-src': "'self' http://*.gstatic.com https://*.gstatic.com",
-     'connect-src': "'self' https://api.mixpanel.com http://api.parse.com",
+     'connect-src': " https://api.mixpanel.com http://api.parse.com",
      'img-src': "'self' https://*.googleapis.com https://*.gstatic.com http://api.wunderground.com",
      'style-src': "'self' 'unsafe-inline' https://*.googleapis.com http://*.googleapis.com",
      'media-src': "'self'"

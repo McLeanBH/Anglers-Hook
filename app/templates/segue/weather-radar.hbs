@@ -3,10 +3,10 @@
 
     <div class="weather-wrapper">
 
-      <h1 class="weather-room-header" contenteditable="" style="text-align: center; font-size: 64px; color: #000; text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb(187, 187, 187) 0px 3px 0px, rgb(185, 185, 185) 0px 4px 0px, rgb(170, 170, 170) 0px 5px 0px, rgba(0, 0, 0, 0.0980392) 0px 6px 1px, rgba(0, 0, 0, 0.0980392) 0px 0px 5px, rgba(0, 0, 0, 0.298039) 0px 1px 3px, rgba(0, 0, 0, 0.2) 0px 3px 5px, rgba(0, 0, 0, 0.247059) 0px 5px 10px, rgba(0, 0, 0, 0.2) 0px 10px 10px, rgba(0, 0, 0, 0.14902) 0px 20px 20px;">Weather Room</h1>
+      <h1 class="weather-room-header">Weather Room</h1>
 
           <div class="weather-box">
-            <div class="weather-radar-container"><img {{bind-attr src=model.radar.radarUrl}}>
+            <div class="weather-radar-container"><img {{bind-attr src=model.radar.radarUrl}}></div>
           </div>  <!-- WEATHER-BOX DIV -->
 
           <div class="weather-box-data">
@@ -24,40 +24,48 @@
           </div>
 
           <form class="weather-data-form">
-
             <fieldset class="weather-fieldset">
-              <label class="weather-stats">Temperature: {{model.data.current_observation.temperature_string}} * </label>
-              <label class="weather-stats">Feels Like: {{model.data.current_observation.feelslike_string}} * </label>
-              <label class="weather-stats">Weather: {{model.data.current_observation.weather}} * </label>
-              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[0].high.fahrenheit}} * </label>
-              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[0].low.fahrenheit}} * </label>
-              <label class="weather-stats">Wind Direction: {{model.data.current_observation.wind_dir}} * </label>
-              <label class="weather-stats">Visibility (Miles): {{model.data.current_observation.visibility_mi}} * </label>
-              <label class="weather-stats">Wind Gusts: {{model.data.current_observation.wind_string}}</label>
+              <label class="weather-stats">Temperature: {{model.data.current_observation.temperature_string}}<i class="wi wi-thermometer"></i></label>
+              <label class="weather-stats">Feels Like: {{model.data.current_observation.feelslike_string}}<i class="wi wi-fahrenheit"></i></label>
+              <label class="weather-stats">Weather: {{model.data.current_observation.weather}}<i class="wi wi-day-sunny-overcast"></i></label>
+              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[0].high.fahrenheit}}<i class="wi wi-day-sunny"></i></label>
+              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[0].low.fahrenheit}}<i class="wi wi-day-showers"></i></label>
+              <label class="weather-stats">Wind Direction: {{model.data.current_observation.wind_dir}}<i class="wi wi-day-cloudy-windy"></i></label>
+              <label class="weather-stats">Visibility (Miles): {{model.data.current_observation.visibility_mi}}<i class="wi wi-horizon"></i></label>
+              <label class="weather-stats">Wind Gusts: {{model.data.current_observation.wind_string}}<i class="wi wi-day-cloudy-gusts"></i></label>
               <!-- <label class="weather-stats"></label> -->
             </fieldset>
 
             <fieldset class="forecast">
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[1].date.weekday}} - </label>
-              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[1].date.pretty}} * </label>
+              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[1].date.pretty}}</label>
+              <label class="weather-stats">Wind: {{model.data.forecast.simpleforecast.forecastday.[1].avewind.dir}}</label>
+              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[1].avewind.mph}}</label>
+              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[1].conditions}}</label>
+              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[1].high.fahrenheit}}</label>
+              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[1].low.fahrenheit}}</label>
+              <br>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[2].date.weekday}} - </label>
-              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[2].date.pretty}} * </label>
+              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[2].date.pretty}}</label>
+              <label class="weather-stats">Wind: {{model.data.forecast.simpleforecast.forecastday.[2].avewind.dir}}</label>
+              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[2].avewind.mph}}</label>
+              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[2].conditions}}</label>
+              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[2].high.fahrenheit}}</label>
+              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[2].low.fahrenheit}}</label>
+              <br>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[3].date.weekday}} - </label>
-              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[3].date.pretty}}</label><br>
-              <!-- <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[4].date.weekday}} - </label> -->
-              <!-- <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[4].date.pretty}} * </label> -->
-              <!-- <label class="weather-stats"></label> -->
+              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[3].date.pretty}}</label>
+              <label class="weather-stats">Wind: {{model.data.forecast.simpleforecast.forecastday.[3].avewind.dir}}</label>
+              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[3].avewind.mph}}</label>
+              <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[3].conditions}}</label>
+              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[3].high.fahrenheit}}</label>
+              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[3].low.fahrenheit}}</label>
             </fieldset>
-
             <fieldset class="search">
               <label class="weather-stats">SEARCH OTHER LOCATIONS:</label>
               <input class="search-field" type="search" placeholder="Enter location...">
             </fieldset>
-
           </form>
-
-        </div> <!-- WEATHER-BOX-DATA DIV -->
-
       <div class="wu-credit">POWERED BY<br><img src="/assets/img/wu-s.png"></div>
     <div class="weather"></div>
   </div>

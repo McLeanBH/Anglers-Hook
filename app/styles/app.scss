@@ -577,33 +577,38 @@ h5 {
 
 /* WEATHER-RADAR */
 
+.weather-room-header {
+  text-align: center;
+  font-size: 64px;
+  color: #000;
+  text-shadow: rgb(204, 204, 204) 0 1px 0, rgb(201, 201, 201) 0 2px 0, rgb(187, 187, 187) 0 3px 0, rgb(185, 185, 185) 0 4px 0, rgb(170, 170, 170) 0 5px 0, rgba(0, 0, 0, .0980392) 0 6px 1px, rgba(0, 0, 0, .0980392) 0 0 5px, rgba(0, 0, 0, .298039) 0 1px 3px, rgba(0, 0, 0, .2) 0 3px 5px, rgba(0, 0, 0, .247059) 0 5px 10px, rgba(0, 0, 0, .2) 0 10px 10px, rgba(0, 0, 0, .14902) 0 20px 20px;
+}
+
 .weather-radar-wrapper {
   min-height: 1100px;
 }
 
 .weather-wrapper {
   margin: 0 auto;
-  background: url('/assets/img/splash.jpg') center center no-repeat;
+  background: url('/assets/img/heavyseas.jpg') center center no-repeat;
   background-color: #396fd5;
   background-size: cover;
   min-height: 1100px;
 }
 
+.weather-box {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .weather-radar-container {
-  display: inline-block;
   margin: 5%;
   margin-top: 1%;
-  border-radius: 65%;
-  text-align: center;
 
   img {
-    border: 13px solid #000;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 80%;
-    border-bottom-right-radius: 80%;
-    background-color: #f8fb92;
-    text-align: left;
+    width: 600px;
+    border-radius: 80%;
+    border: 2px solid #396fd5;
   }
 }
 

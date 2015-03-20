@@ -1,7 +1,11 @@
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+  'ember-cli-jquery-ui': {
+        'theme': 'smoothness'
+    }
+});
 
 app.import('bower_components/weather-icons/font/weathericons-regular-webfont.eot', {
   destDir: 'assets/fonts'
@@ -22,6 +26,8 @@ app.import('bower_components/weather-icons/font/weathericons-regular-webfont.wof
 app.import('bower_components/weather-icons/font/WeatherIcons-Regular.otf', {
   destDir: 'assets/fonts'
 });
+
+app.import('bower_components/jquery-ui/jquery-ui.js');
 
 app.import('bower_components/weather-icons/css/weather-icons.css');
 

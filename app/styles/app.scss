@@ -390,11 +390,21 @@ body {
 
 /* SPECIES-REF PAGE */
 
+.species-header {
+  margin: 0;
+  padding-bottom: 40px;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: .6em;
+  color: #fff;
+  font-size: 54px;
+  text-shadow: rgb(204, 204, 204) 0 1px 0, rgb(201, 201, 201) 0 2px 0, rgb(187, 187, 187) 0 3px 0, rgb(185, 185, 185) 0 4px 0, rgb(170, 170, 170) 0 5px 0, rgba(0, 0, 0, .0980392) 0 6px 1px, rgba(0, 0, 0, .0980392) 0 0 5px, rgba(0, 0, 0, .298039) 0 1px 3px, rgba(0, 0, 0, .2) 0 3px 5px, rgba(0, 0, 0, .247059) 0 5px 10px, rgba(0, 0, 0, .2) 0 10px 10px, rgba(0, 0, 0, .14902) 0 30px 30px;
+}
+
 .logo-list {
   margin: 0 auto;
   padding-top: 20px;
   height: 1000px;
-
 
   li {
     display: inline-block;
@@ -410,7 +420,7 @@ body {
 
 .species-wrapper {
   margin: 0 auto;
-  height: 800px;
+  min-height: 800px;
 
   h1 {
     margin: 0;
@@ -422,124 +432,9 @@ body {
   }
 }
 
-.chart {
+.reference-tabs {
   margin: 0 auto;
-
-  img {
-    width: 55%;
-    height: 55%;
-    vertical-align: middle;
-  }
-}
-
-/* .chart-2, .chart-2 img,
-.chart-3, .chart-3 img {
-  display: inline-block;
-  width: 55%;
-  height: 55%;
-} */
-
-.chart-4 {
-  margin: 0 auto;
-
-  img {
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-    padding-bottom: 25px;
-    padding-left: 27.5%;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.species-list-2 {
-  margin: 0 auto;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/sunset.png') center center no-repeat;
-  background-size: cover;
-  list-style: none;
-}
-
-.species-list-3 {
-  margin: 0 auto;
-  border-top: 16px solid #fdb42c;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/the-keys.png') center center no-repeat;
-  background-size: cover;
-  list-style: none;
-}
-
-.species-list-4 {
-  margin: 0 auto;
-  border-top: 16px solid #fdb42c;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/sportfishers.jpg') center center no-repeat;
-  background-size: cover;
-  list-style: none;
-}
-
-.species-list-5 {
-  margin: 0 auto;
-  border-top: 16px solid #fdb42c;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/hatteras-yacht.jpg') center center no-repeat;
-  background-size: cover;
-  list-style: none;
-}
-
-.species-list-6 {
-  margin: 0 auto;
-  border-top: 16px solid #fdb42c;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/7.jpg') center center no-repeat;
-  background-size: cover;
-  list-style: none;
-}
-
-.species-list-7 {
-  margin: 0 auto;
-  border-top: 16px solid #fdb42c;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/blue-running.png') center center no-repeat;
-  background-size: cover;
-  list-style: none;
-}
-
-.species-list-8 {
-  margin: 0 auto;
-  border-top: 16px solid #fdb42c;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/crowsview.jpg') center center no-repeat;
-  background-size: cover;
-  list-style: none;
-}
-
-.species-list-9 {
-  margin: 0 auto;
-  border-top: 16px solid #fdb42c;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/from-above.png') center center no-repeat;
-  background-size: cover;
-  list-style: none;
-}
-
-.species-list-10 {
-  margin: 0 auto;
-  border-top: 16px solid #fdb42c;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/deep-sea-charter-fishing.jpg') center center no-repeat;
-  background-size: cover;
-  list-style: none;
-}
-
-.species-list-11 {
-  margin: 0 auto;
-  border-top: 16px solid #fdb42c;
-  border-bottom: 16px solid #fff;
-  background: url('/assets/img/fishing.jpg') center center no-repeat;
-  background-size: cover;
-  list-style: none;
+  text-align: center;
 }
 
 .marine-species,
@@ -548,23 +443,65 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   vertical-align: middle;
+  width: 48%;
 }
 
-.msl {
-  padding-left: 80px;
+.ms1 {
+  width: 50%;
+  float: left;
 }
 
-.msr {
-  padding-left: 350px;
+.sl1 {
+  background: url('/assets/img/sunset.png') center center no-repeat;
+  background-size: cover;
+  vertical-align: middle;
 }
 
-.msx {
-  margin-left: 5%;
+.sl2 {
+  background: url('/assets/img/the-keys.png') center center no-repeat;
+  background-size: cover;
 }
 
-.background-image-2 {
-  border-top: 25px solid #fdb42c;
+.sl3 {
+  background: url('/assets/img/sportfishers.jpg') center center no-repeat;
+  background-size: cover;
 }
+
+.sl4 {
+  background: url('/assets/img/hatteras-yacht.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.sl5 {
+  background: url('/assets/img/7.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.sl6 {
+  background: url('/assets/img/blue-running.png') center center no-repeat;
+  background-size: cover;
+}
+
+.sl7 {
+  background: url('/assets/img/crowsview.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.sl8 {
+  background: url('/assets/img/from-above.png') center center no-repeat;
+  background-size: cover;
+}
+
+.sl9 {
+  background: url('/assets/img/deep-sea-charter-fishing.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.sl10 {
+  background: url('/assets/img/burnin.jpg') center center no-repeat;
+ background-size: cover;
+}
+
 
  /* MEDIA PAGE */
 

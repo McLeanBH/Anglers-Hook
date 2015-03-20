@@ -4,17 +4,17 @@
   <div class="nav-container">
     <ul>
       <li>{{link-to "Register" 'register'}}</li>
-      <li>{{link-to "Login" 'login'}}</li>
+      <li>{{#if session.isAuthenticated}}<a {{ action 'invalidateSession' }} href="javascript:void(0)">Logout</a>
+      {{else}}
+      {{#link-to 'login'}}Login{{/link-to}}
+      {{/if}}
+      </li>
       <li>{{link-to "Species" 'segue.species-ref'}}</li>
       <li>{{link-to "Radar" 'segue.weather-radar'}}</li>
       <li>{{link-to "Media" 'segue.forum'}}</li>
     </ul>
   </div>
 </div>
-{{#if session.isAuthenticated}}<a {{ action 'invalidateSession' }} href="javascript:void(0)">Logout</a>
-{{else}}
-{{#link-to 'login'}}Login{{/link-to}}
-{{/if}}
 {{outlet}}
 <div class="footer">
   <ul class="footer-list">

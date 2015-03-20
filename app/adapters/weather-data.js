@@ -6,7 +6,6 @@ export default Ember.Object.extend({
     return ajax("http://api.wunderground.com/api/92a39adfcd902ac7/animatedradar/animatedsatellite/geolookup/conditions/forecast/hourly/rawtide/tide/q/autoip.json", {
       dataType: 'jsonp'
     }).then(function(response){
-      console.log(response);
       return response;
     });
   }

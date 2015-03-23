@@ -15,28 +15,19 @@ module.exports = function(environment) {
 
     APP: {
       filepickerKey: 'A4kxhmkh4TVYjc7Kv3IGQz'
-      
+
     },
 
-  //   modeule.exports = function(environment) {
-  //
-  //     var ENV = {
-  //       ///...
-  //
-  //     APP: {
-  //       filepickerKey: 'A4kxhmkh4TVYjc7Kv3IGQz'
-  //     }
-  //   }
-  // },
 
   contentSecurityPolicy: {
-    'default-src': "'none'",
-     'script-src': "'self' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com http://api.wunderground.com",
+    'default-src': "https://www.filepicker.io/dialog/comm_iframe/",
+     'script-src': "'self' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com http://api.wunderground.com http://api.filepicker.io/v1/filepicker.js",
      'font-src': "'self' http://*.gstatic.com https://*.gstatic.com",
      'connect-src': " https://api.mixpanel.com http://api.parse.com",
      'img-src': "'self' https://*.googleapis.com https://*.gstatic.com http://api.wunderground.com",
      'style-src': "'self' 'unsafe-inline' https://*.googleapis.com http://*.googleapis.com",
      'media-src': "'self'"
+    //  'frame-src': "'https://dialog.filepicker.io/dialog/comm_iframe/'"
    },
 
    'simple-auth': {

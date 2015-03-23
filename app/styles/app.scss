@@ -228,6 +228,16 @@ body {
   padding-top: 60px;
   background-color: #FDB42C;
   border: 3px solid #000;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    border: 2px solid #000;
+    background-color: #396fd5;
+  }
 }
 
 .avatar {
@@ -238,6 +248,11 @@ body {
     width: 100px;
     top: 0;
   }
+}
+
+.avatar,
+.profile-info {
+  display: inline-block;
 }
 
 .profile-stats {
@@ -256,6 +271,13 @@ body {
     margin: 0 auto;
   }
 }
+
+/* EDIT-PROFILE PAGE */
+
+
+
+
+
 
 /* LOGIN PAGE */
 

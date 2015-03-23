@@ -7,21 +7,14 @@
       <div class="avatar"><img src="/assets/img/marlin_logo.png"></div>
       <div class="profile-info">
         <ul class="profile-stats">
-          <li></li>
-          <li></li>
+          <li>{{session.currentUser.firstName}}</li>
+          <li>{{session.currentUser.lastName}}</li>
+          <li>{{input class="profile-fields" value=city placeholder='City'}}</li>
+          <li>{{input class="profile-fields" value=state placeholder='State'}}</li>
+          <li>{{input class="profile-fields" value=boatName placeholder='Boat Name'}}</li>
         </ul>
       </div>
-
-      <div class="file-picker">
-
-        <!-- {{input class="reg-field r1 email inputters" value=email placeholder='Email Address'}}<br> -->
-
-
-        <!-- {{ember-filepicker input type="filepicker" data-fp-apikey="A4kxhmkh4TVYjc7Kv3IGQz" data-fp-mimetypes="*/*" data-fp-container="modal" data-fp-multiple="true" data-fp-services="COMPUTER,DROPBOX,FACEBOOK,GMAIL,INSTAGRAM" onchange="out='';for(var i=0;i<event.fpfiles.length;i++){out+=event.fpfiles[i].url;out+=' '};alert(out)"}} -->
-
-        {{ember-filepicker options=options onSelection='fileSelected' onClose='onClose' onError='onError'}}
-      </div>
-
+      {{link-to "Edit Profile" 'segue.edit-profile'}}
     </div>
   </div>
   <div class="bottom-container">
@@ -33,3 +26,9 @@
   </div>
 </div>
 {{outlet}}
+
+<!-- <div class="file-picker">
+  {{input class="reg-field r1 email inputters" value=email placeholder='Email Address'}}<br>
+  {{ember-filepicker input type="filepicker" data-fp-apikey="A4kxhmkh4TVYjc7Kv3IGQz" data-fp-mimetypes="*/*" data-fp-container="modal" data-fp-multiple="true" data-fp-services="COMPUTER,DROPBOX,FACEBOOK,GMAIL,INSTAGRAM" onchange="out='';for(var i=0;i<event.fpfiles.length;i++){out+=event.fpfiles[i].url;out+=' '};alert(out)"}}
+  {{ember-filepicker options=options onSelection='fileSelected' onClose='onClose' onError='onError'}}
+</div> -->

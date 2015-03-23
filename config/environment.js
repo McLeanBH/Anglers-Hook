@@ -14,9 +14,20 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      filepickerKey: 'A4kxhmkh4TVYjc7Kv3IGQz'
+      
     },
+
+  //   modeule.exports = function(environment) {
+  //
+  //     var ENV = {
+  //       ///...
+  //
+  //     APP: {
+  //       filepickerKey: 'A4kxhmkh4TVYjc7Kv3IGQz'
+  //     }
+  //   }
+  // },
 
   contentSecurityPolicy: {
     'default-src': "'none'",

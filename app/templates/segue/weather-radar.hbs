@@ -28,8 +28,8 @@
               <label class="weather-stats">Temperature: {{model.data.current_observation.temperature_string}}<i class="wi wi-thermometer"></i></label>
               <label class="weather-stats">Feels Like: {{model.data.current_observation.feelslike_string}}<i class="wi wi-fahrenheit"></i></label>
               <label class="weather-stats">Weather: {{model.data.current_observation.weather}}<i class="wi wi-day-sunny-overcast"></i></label>
-              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[0].high.fahrenheit}}<i class="wi wi-day-sunny"></i></label>
-              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[0].low.fahrenheit}}<i class="wi wi-day-showers"></i></label>
+              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[0].high.fahrenheit}}˚<i class="wi wi-day-sunny"></i></label>
+              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[0].low.fahrenheit}}˚<i class="wi wi-day-showers"></i></label>
               <label class="weather-stats">Wind Direction: {{model.data.current_observation.wind_dir}}<i class="wi wi-day-cloudy-windy"></i></label>
               <label class="weather-stats">Visibility (Miles): {{model.data.current_observation.visibility_mi}}<i class="wi wi-horizon"></i></label>
               <label class="weather-stats">Wind Gusts: {{model.data.current_observation.wind_string}}<i class="wi wi-day-cloudy-gusts"></i></label>
@@ -42,24 +42,24 @@
               <label class="weather-stats">Wind: {{model.data.forecast.simpleforecast.forecastday.[1].avewind.dir}}</label>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[1].avewind.mph}}</label>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[1].conditions}}</label>
-              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[1].high.fahrenheit}}</label>
-              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[1].low.fahrenheit}}</label>
+              <label class="weather-stats">High:{{model.data.forecast.simpleforecast.forecastday.[1].high.fahrenheit}}˚</label>
+              <label class="weather-stats">Low:{{model.data.forecast.simpleforecast.forecastday.[1].low.fahrenheit}}˚</label>
               <br>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[2].date.weekday}} - </label>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[2].date.pretty}}</label>
               <label class="weather-stats">Wind: {{model.data.forecast.simpleforecast.forecastday.[2].avewind.dir}}</label>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[2].avewind.mph}}</label>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[2].conditions}}</label>
-              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[2].high.fahrenheit}}</label>
-              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[2].low.fahrenheit}}</label>
+              <label class="weather-stats">High:{{model.data.forecast.simpleforecast.forecastday.[2].high.fahrenheit}}˚</label>
+              <label class="weather-stats">Low:{{model.data.forecast.simpleforecast.forecastday.[2].low.fahrenheit}}˚</label>
               <br>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[3].date.weekday}} - </label>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[3].date.pretty}}</label>
               <label class="weather-stats">Wind: {{model.data.forecast.simpleforecast.forecastday.[3].avewind.dir}}</label>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[3].avewind.mph}}</label>
               <label class="weather-stats">{{model.data.forecast.simpleforecast.forecastday.[3].conditions}}</label>
-              <label class="weather-stats">High: {{model.data.forecast.simpleforecast.forecastday.[3].high.fahrenheit}}</label>
-              <label class="weather-stats">Low: {{model.data.forecast.simpleforecast.forecastday.[3].low.fahrenheit}}</label>
+              <label class="weather-stats">High:{{model.data.forecast.simpleforecast.forecastday.[3].high.fahrenheit}}˚</label>
+              <label class="weather-stats">Low:{{model.data.forecast.simpleforecast.forecastday.[3].low.fahrenheit}}˚</label>
             </fieldset>
             <fieldset class="search">
               <label class="weather-stats">SEARCH OTHER LOCATIONS:</label>

@@ -1,36 +1,24 @@
 <div class="profile-editor">
-
     <form id="profile-editor-form" {{action 'saveProfile' on='submit'}}>
       <br>
-
-      <div class="editor edit-firstname">
+      <fieldset class="edit-fieldset">
         {{input placeholder="First Name" value=session.currentUser.firstName}}
-      </div>
-
-      <div class="editor edit-lastname">
         {{input placeholder="Last Name" value=session.currentUser.lastName}}
-      </div>
-
-      <div class="editor edit-address">
         {{input placeholder="Address" value=session.currentUser.address}}
-      </div>
-
-      <div class="editor edit-city">
         {{input class="profile-fields" value=city placeholder='City'}}
-      </div>
-
-      <div class="editor edit-state">
         {{input class="profile-fields" value=state placeholder='State'}}
-      </div>
-
-      <div class="editor edit-boatName">
         {{input class="profile-fields" value=boatName placeholder='Boat Name'}}
-      </div>
-
-
-      <div class="profile-editor-submit">
-        <button type="submit-updates">Save</button>
-      </div>
+        <input type="submit" value="Update" class="submit-updates"/>
+      </fieldset>
     </form>
-  </div>
+</div>
 {{outlet}}
+
+
+      <!-- <div class="editor edit-firstname"></div> -->
+      <!-- <div class="editor edit-lastname"></div> -->
+      <!-- <div class="editor edit-address"></div> -->
+      <!-- <div class="editor edit-city"></div> -->
+      <!-- <div class="editor edit-state"></div> -->
+      <!-- <div class="editor edit-boatName"></div> -->
+      <!-- <div class="profile-editor-submit"><button type="submit-updates">Save</button></div> -->

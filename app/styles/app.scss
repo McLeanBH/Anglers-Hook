@@ -274,9 +274,20 @@ body {
 
 /* EDIT-PROFILE PAGE */
 
+.profile-editor {
+  min-height: 600px;
+  background-color: #396fd5;
+}
 
+#profile-editor-form {
+  margin: 0 auto;
+  text-align: center;
+  border: 13px solid #fff;
+}
 
-
+.editor {
+  line-height: 2.5;
+}
 
 
 /* LOGIN PAGE */

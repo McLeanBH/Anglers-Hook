@@ -40,6 +40,7 @@
         {{/photo-swipe}}
       </div>
     </div>
+    {{ember-filepicker options=options onSelection='fileSelected' onClose='onClose' onError='onError'}}
 {{outlet}}
 <!-- <div class="media-boxes box-1"></div>
 <div class="media-boxes box-2"></div>

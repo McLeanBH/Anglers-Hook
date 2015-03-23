@@ -1,0 +1,20 @@
+<div class="profile-editor">
+
+    <form id="profile-editor-form" {{action 'saveProfile' on='submit'}}>
+
+      <div class="edit-firstname">
+        {{input placeholder="First Name" value=session.currentUser.firstName}}
+      </div>
+      <div class="edit-lastname">
+        {{input placeholder="Last Name" value=session.currentUser.lastName}}
+      </div>
+      <div class="edit-address">
+        {{input placeholder="Address" value=session.currentUser.address}}
+      </div>
+
+      <div class="profile-editor-submit">
+        <button type="submit-updates">Save</button>
+      </div>
+    </form>
+  </div>
+{{outlet}}

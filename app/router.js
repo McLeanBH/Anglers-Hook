@@ -17,6 +17,7 @@ Router.map(function() {
       this.route('loading');
     });
     this.route('forum');
+    this.route('edit-profile');
   });
   this.route('search');
   this.route('show');

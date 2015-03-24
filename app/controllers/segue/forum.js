@@ -21,8 +21,7 @@ export default Ember.Controller.extend({
       url: "https://api.parse.com/1/Photos" + photo.name,
       type: "POST",
       contentType: photo.type,
-      data: photo,
-      processData: false
+      data: photo
     });
   }
 });

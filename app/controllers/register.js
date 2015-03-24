@@ -16,10 +16,9 @@ export default Ember.Controller.extend({
 // });
 
     actions: {
-      save: function() {
+      saveUser: function() {
         var self = this;
         var user = this.get('model');
-        user.username = user.email;
         user.save().then(function(){
           self.get('session').authenticate('authenticator:parse-email', user);
         });

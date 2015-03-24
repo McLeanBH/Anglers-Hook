@@ -2,7 +2,7 @@ import ajax from 'ic-ajax';
 import Model from 'ember-magic-man/model';
 
 export default Model.extend({
-  addFavorite: function(bookmark) {
+  addFavorite: function(user) {
     return ajax("https://api.parse.com/1/users/" + this.id, {
       type: "PUT",
       data: JSON.stringify({
@@ -11,7 +11,7 @@ export default Model.extend({
           objects: [
             {
               __type: 'Pointer',
-              className: 'Bookmark',
+              className: 'User',
               objectId: bookmark.id
             }
           ]

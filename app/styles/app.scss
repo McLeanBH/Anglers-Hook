@@ -220,6 +220,11 @@ body {
   font-family: 'Gravitas One', cursive;
 }
 
+.profile-labels {
+  text-decoration: underline;
+  padding-top: 5px;
+}
+
 .profile-container {
   width: 700px;
   height: 300px;
@@ -614,6 +619,7 @@ body {
 .forum-wrapper {
   border-bottom: 13px solid #fff;
   background-color: #396fd5;
+  min-height: 700px;
 }
 
 .media-list {

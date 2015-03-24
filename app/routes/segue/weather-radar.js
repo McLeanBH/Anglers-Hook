@@ -8,9 +8,3 @@ export default Ember.Route.extend({
     });
   }
 });
-
-
-  // beforeModel: function () {
-  //   throw new Error("Something bad happened!");
-  // },
-  //

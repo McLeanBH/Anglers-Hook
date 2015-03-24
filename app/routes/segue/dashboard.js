@@ -11,12 +11,4 @@ export default Ember.Route.extend({
       }
     });
   },
-
-  actions: {
-    // createRecord: function(){
-    //   this.modelFor('photo').save().then(function() {
-    //     this.transitionTo('index');
-    //   }.bind(this));
-    // }
-  }
 });

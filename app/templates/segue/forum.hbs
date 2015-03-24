@@ -1,6 +1,13 @@
 <div class="forum-wrapper">
   <div class="top-border-div"></div>
       <h1 class="media-room-header" contenteditable="">Media Room</h1>
+
+      <div class="photo-uploader">
+        {{#if shouldShowFilepicker}}
+          {{ember-filepicker options=options onSelection='fileSelected' onClose='closeFilepicker' onError='onError'}}
+        {{/if}}
+        <button {{action "openFilepicker"}}>Upload Photo</button>
+      </div>
       <div class="photo-gallery">
       {{#photo-swipe}}
         <ul class="media-list">
@@ -40,12 +47,6 @@
         {{/photo-swipe}}
       </div>
     </div>
-
-    {{#if shouldShowFilepicker}}
-      {{ember-filepicker options=options onSelection='fileSelected' onClose='closeFilepicker' onError='onError'}}
-    {{/if}}
-
-    <button {{action "openFilepicker"}}>Upload Photo</button>
 {{outlet}}
 <!-- <div class="media-boxes box-1"></div>
 <div class="media-boxes box-2"></div>

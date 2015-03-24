@@ -275,18 +275,33 @@ body {
 /* EDIT-PROFILE PAGE */
 
 .profile-editor {
-  min-height: 600px;
+  min-height: 700px;
   background-color: #396fd5;
 }
 
 #profile-editor-form {
   margin: 0 auto;
   text-align: center;
-  border: 13px solid #fff;
 }
 
 .editor {
   line-height: 2.5;
+}
+
+.edit-fieldset {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 450px;
+
+  input {
+    display: block;
+    margin: 0 auto;
+    line-height: 2;
+    margin-top: 30px;
+  }
 }
 
 

@@ -18,8 +18,9 @@
     </div>
   </div>
   <div class="bottom-container">
-    <div class="filepicker-photo-upload-dashboard"><img {{bind-attr src=blob.url}}/></div>
+    {{#each photo in model}}
+      <li class="media-icons icon-2.1"><a {{bind-attr href=photo.url}} data-width="250" data-height="250"><img {{bind-attr src=photo.url}}></a></li>
+    {{/each}}
   </div>
 </div>
-{{log photo.url}}
 {{outlet}}

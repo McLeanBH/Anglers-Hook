@@ -10,9 +10,12 @@
       </div>
       <div class="photo-gallery">
       {{#photo-swipe}}
-      <div class="filepicker-photo-upload-forum"><img {{bind-attr src='model.blob.url'}}/></div>
         <ul class="media-list">
-          <li class="media-icons icon-1.2"><a href="/assets/img/backflip.png" data-width="250" data-height="250"><img src="/assets/img/backflip.png"></a></li>
+          {{#each photo in model}}
+            <li class="media-icons icon-2.1"><a {{bind-attr href=photo.url}} data-width="250" data-height="250"><img {{bind-attr src=photo.url}}></a></li>
+          {{/each}}
+
+          <!-- <li class="media-icons icon-1.2"><a href="/assets/img/backflip.png" data-width="250" data-height="250"><img src="/assets/img/backflip.png"></a></li>
           <li class="media-icons icon-2.1"><a href="/assets/img/deep-sea-charter-fishing.jpg" data-width="250" data-height="250"><img src="/assets/img/deep-sea-charter-fishing.jpg"></a></li>
           <li class="media-icons icon-2.2"><a href="/assets/img/sky.jpg" data-width="250" data-height="250"><img src="/assets/img/sky.jpg"></a></li>
           <li class="media-icons icon-3.2"><a href="/assets/img/marlin.jpg" data-width="250" data-height="250"><img src="/assets/img/marlin.jpg"></a></li>
@@ -43,7 +46,7 @@
           <li class="media-icons icon-9.2"><a href="/assets/img/killer.jpg" data-width="250" data-height="250"><img src="/assets/img/killer.jpg"></a></li>
           <li class="media-icons icon-9.2"><a href="/assets/img/blue.jpg" data-width="250" data-height="250"><img src="/assets/img/blue.jpg"></a></li>
           <li class="media-icons icon-9.2"><a href="/assets/img/miami.jpg" data-width="250" data-height="250"><img src="/assets/img/miami.jpg"></a></li>
-          <li class="media-icons icon-9.2"><a href="/assets/img/humdinger.jpg" data-width="250" data-height="250"><img src="/assets/img/humdinger.jpg"></a></li>
+          <li class="media-icons icon-9.2"><a href="/assets/img/humdinger.jpg" data-width="250" data-height="250"><img src="/assets/img/humdinger.jpg"></a></li> -->
         </ul>
         {{/photo-swipe}}
       </div>

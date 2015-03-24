@@ -12,16 +12,17 @@ export default Ember.Controller.extend({
     },
     fileSelected: function(blob) {
       console.log(blob);
-    }
-  },
 
-  findAll: function () {
-    var photo = this.get('uploadedPhoto');
-    return ajax({
-      url: "https://api.parse.com/1/Photos" + photo.name,
-      type: "POST",
-      contentType: photo.type,
-      data: photo
-    });
+      var photo = this.store.createRecord('photo', {
+        createdBy: this.get('session.currentUser'),
+        url: blob.url,
+        filename: blob.filename,
+        isWriteable: blob.isWriteable,
+        mimetype: blob.mimetype,
+        size: blob.size
+      });
+
+      return photo.save();
+    }
   }
 });

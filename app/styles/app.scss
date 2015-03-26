@@ -734,13 +734,13 @@ h5 {
 
 @mixin fill-parent() {
   display: inline-block;
-  color: #000;
+  color: #fff;
   font-size: 14px;
   font-weight: 800;
   margin: 0;
   line-height: 2;
   letter-spacing: .059em;
-  font-family: $header-font;
+  font-family: $body-font;
 }
 
 .weather-stats,
@@ -752,6 +752,12 @@ h5 {
     margin: 0;
     line-height: 2;
   }
+}
+
+.location-stats,
+.date-stats,
+.forecast-stats {
+  color: #000;
 }
 
 .weather-icons-list {

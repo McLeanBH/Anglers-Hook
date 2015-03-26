@@ -3,8 +3,12 @@ $visual-grid: false;
 $gutter: em(57px);
 @import 'bower_components/neat/app/assets/stylesheets/neat';
 
+$body-font: 'Open Sans', sans-serif;
+$header-font: 'Syncopate', sans-serif;
+
 * {
   box-sizing: border-box;
+  font-family: $body-font;
 }
 
 body {
@@ -52,7 +56,7 @@ body {
   a {
     text-decoration: none;
     color: #000;
-    font-family: 'Syncopate', sans-serif;
+    font-family: $header-font;  /* 'Syncopate', sans-serif; */
     font-size: 12px;
     font-weight: 700;
   }
@@ -73,19 +77,19 @@ body {
   a {
     text-decoration: none;
     color: #000;
-    font-family: 'Syncopate', sans-serif;
+    font-family: $header-font;
     font-size: 12px;
     font-weight: 700;
   }
 }
 
 .welcome-wrapper {
-  background-color: #396fd5;
+  background-color: #283593;
 }
 
 .wrapper {
   border-bottom: 13px solid #fff;
-  background-color: #396fd5;
+  background-color: #283593;
   min-height: 1000px;
 }
 
@@ -98,23 +102,28 @@ body {
   min-height: 600px;
 
   h1 {
-    padding-top: 150px;
+    padding-top: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #396fd5;
+    color: #fdb42c;
     font-size: 64px;
     font-weight: 800;
-    text-shadow: rgba(251, 179, 61, 1) 0 1px 0, rgba(251, 179, 61, 1) 0 2px 0, rgba(251, 179, 61, 1) 0 3px 0, rgba(251, 179, 61, 1) 0 4px 0, rgba(251, 179, 61, 1) 0 5px 0, rgba(0, 0, 0, .0980392) 0 6px 1px, rgba(0, 0, 0, .0980392) 0 0 5px, rgba(0, 0, 0, .298039) 0 1px 3px, rgba(0, 0, 0, .2) 0 3px 5px, rgba(0, 0, 0, .247059) 0 5px 10px, rgba(0, 0, 0, .2) 0 10px 10px, rgba(0, 0, 0, .14902) 0 30px 30px;
+    font-family: $header-font;
+    text-shadow: 1px 1px 10px #333;
+    position: relative;
+    z-index: 10;
   }
 
   h4 {
     text-align: center;
     text-transform: uppercase;
-    color: #000;
-    font-family: 'Gravitas One', cursive;
-    font-size: 32px;
+    color: #fff;
+    font-size: 45px;
     font-weight: 800;
-    text-shadow: rgba(251, 179, 61, 1) 0 1px 0, rgba(251, 179, 61, 1) 0 2px 0, rgba(251, 179, 61, 1) 0 3px 0, rgba(251, 179, 61, 1) 0 4px 0, rgba(251, 179, 61, 1) 0 5px 0, rgba(0, 0, 0, .0980392) 0 6px 1px, rgba(0, 0, 0, .0980392) 0 0 5px, rgba(0, 0, 0, .298039) 0 1px 3px, rgba(0, 0, 0, .2) 0 3px 5px, rgba(0, 0, 0, .247059) 0 5px 10px, rgba(0, 0, 0, .2) 0 10px 10px, rgba(0, 0, 0, .14902) 0 30px 30px;
+    font-family: $header-font;
+    text-shadow: 1px 1px 10px #333;
+    position: relative;
+    z-index: 10;
   }
 }
 
@@ -125,7 +134,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, .4);
   content: '';
 }
 
@@ -159,7 +168,7 @@ body {
 }
 
 .footer {
-  border-top: 13px solid #fbb33d;
+  border-top: 13px solid #fdb42c;
   background-color: #181818;
   height: 90px;
   color: #fff;
@@ -192,7 +201,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'PT Mono';
+  font-family: $header-font;
   font-size: 10px;
 }
 
@@ -204,7 +213,7 @@ body {
 
 .dashboard-wrapper {
   min-height: 700px;
-  background-color: #396fd5;
+  background-color: #283593;
 }
 
 .search-form {
@@ -215,11 +224,12 @@ body {
 }
 
 .search-input {
-  border: 2px solid #FDB42C;
+  border: 2px solid #fbd42c;
   text-align: right;
+  margin-bottom: 10px;
   width: 400px;
   line-height: 2;
-  font-family: 'Gravitas One', cursive;
+  font-family: $body-font;
 }
 
 .profile-labels {
@@ -230,20 +240,21 @@ body {
 .profile-container {
   width: 700px;
   height: 300px;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding-bottom: 30px;
   text-align: center;
   padding-top: 60px;
-  background-color: #FDB42C;
+  background-color: #fdb42c;
   border: 3px solid #000;
 
   a {
     text-decoration: none;
     color: #fff;
-    font-family: 'Syncopate', sans-serif;
+    font-family: $header-font;
     font-size: 12px;
     font-weight: 700;
     border: 2px solid #000;
-    background-color: #396fd5;
+    background-color: #283593;
   }
 }
 
@@ -283,7 +294,7 @@ body {
 
 .profile-editor {
   min-height: 700px;
-  background-color: #396fd5;
+  background-color: #283593;
 }
 
 #profile-editor-form {
@@ -322,7 +333,7 @@ body {
   margin: 0 auto;
   margin-top: 12%;
   background-color: #fff;
-  background: url('/assets/img/crowsview.jpg') center center no-repeat;
+  /* background: url('/assets/img/crowsview.jpg') center center no-repeat; */
   background-size: cover;
   width: 600px;
   text-align: center;
@@ -336,10 +347,10 @@ body {
   display: block;
   margin: 20px;
   margin-left: 50px;
-  border-top: 4px solid #396fd5;
+  border-top: 4px solid #283593;
   border-right: 4px solid #000;
   border-bottom: 4px solid #000;
-  border-left: 4px solid #396fd5;
+  border-left: 4px solid #283593;
   width: 370px;
   text-align: right;
   line-height: 2;
@@ -351,8 +362,8 @@ body {
 
 .login-password {
   border-top: 4px solid #000;
-  border-right: 4px solid #396fd5;
-  border-bottom: 4px solid #396fd5;
+  border-right: 4px solid #283593;
+  border-bottom: 4px solid #283593;
   border-left: 4px solid #000;
 }
 
@@ -360,8 +371,8 @@ body {
   margin: 0 auto;
   margin-bottom: 40px;
   border-top: 4px solid #000;
-  border-right: 4px solid #396fd5;
-  border-bottom: 4px solid #396fd5;
+  border-right: 4px solid #283593;
+  border-bottom: 4px solid #283593;
   border-left: 4px solid #000;
   width: 100px;
   color: #000;
@@ -372,7 +383,7 @@ body {
 
 .login-fieldset {
   margin: 0;
-  border: 13px solid #fbd42c;
+  border: 13px solid #FDB42C;
   padding-right: 50px;
   padding-left: 50px;
 }
@@ -413,8 +424,8 @@ body {
   margin: 0 auto;
   margin-bottom: 40px;
   border-top: 4px solid #000;
-  border-right: 4px solid #396fd5;
-  border-bottom: 4px solid #396fd5;
+  border-right: 4px solid #283593;
+  border-bottom: 4px solid #283593;
   border-left: 4px solid #000;
   width: 200px;
   line-height: 3;
@@ -426,7 +437,7 @@ body {
 
 .reg-fieldset {
   margin: 0;
-  border: 10px solid #fbd42c;
+  border: 10px solid #FDB42C
 }
 
 .reg-header {
@@ -438,16 +449,16 @@ body {
 }
 
 .r1 {
-  border-top: 4px solid #396fd5;
+  border-top: 4px solid #283593;
   border-right: 4px solid #000;
   border-bottom: 4px solid #000;
-  border-left: 4px solid #396fd5;
+  border-left: 4px solid #283593;
 }
 
 .r2 {
   border-top: 4px solid #000;
-  border-right: 4px solid #396fd5;
-  border-bottom: 4px solid #396fd5;
+  border-right: 4px solid #283593;
+  border-bottom: 4px solid #283593;
   border-left: 4px solid #000;
 }
 
@@ -482,7 +493,7 @@ body {
   letter-spacing: .6em;
   color: #fff;
   font-size: 54px;
-  text-shadow: rgb(204, 204, 204) 0 1px 0, rgb(201, 201, 201) 0 2px 0, rgb(187, 187, 187) 0 3px 0, rgb(185, 185, 185) 0 4px 0, rgb(170, 170, 170) 0 5px 0, rgba(0, 0, 0, .0980392) 0 6px 1px, rgba(0, 0, 0, .0980392) 0 0 5px, rgba(0, 0, 0, .298039) 0 1px 3px, rgba(0, 0, 0, .2) 0 3px 5px, rgba(0, 0, 0, .247059) 0 5px 10px, rgba(0, 0, 0, .2) 0 10px 10px, rgba(0, 0, 0, .14902) 0 30px 30px;
+  text-shadow: rgb(204, 204, 204) 0 1px 0;
 }
 
 .logo-list {
@@ -591,7 +602,7 @@ body {
 
 .media-room-header {
   text-align: center;
-  text-shadow: rgb(204, 204, 204) 0 1px 0, rgb(201, 201, 201) 0 2px 0, rgb(187, 187, 187) 0 3px 0, rgb(185, 185, 185) 0 4px 0, rgb(170, 170, 170) 0 5px 0, rgba(0, 0, 0, .0980392) 0 6px 1px, rgba(0, 0, 0, .0980392) 0 0 5px, rgba(0, 0, 0, .298039) 0 1px 3px, rgba(0, 0, 0, .2) 0 3px 5px, rgba(0, 0, 0, .247059) 0 5px 10px, rgba(0, 0, 0, .2) 0 10px 10px, rgba(0, 0, 0, .14902) 0 20px 20px;
+  text-shadow: rgb(204, 204, 204) 0 1px 0;
   color: #fff;
   font-size: 64px;
 }
@@ -608,10 +619,10 @@ body {
   padding-bottom: 30px;
 
   button {
-    background-color: #FBB33D;
+    background-color: #fdb42c;
     border: 2px solid #fff;
     color: #000;
-    font-family: 'Syncopate', sans-serif;
+    font-family: $header-font;
     font-size: 12px;
     font-weight: 700;
     cursor: pointer;
@@ -620,7 +631,7 @@ body {
 
 .forum-wrapper {
   border-bottom: 13px solid #fff;
-  background-color: #396fd5;
+  background-color: #283593;
   min-height: 700px;
 }
 
@@ -682,7 +693,7 @@ h5 {
   text-align: center;
   font-size: 64px;
   color: #000;
-  text-shadow: rgb(204, 204, 204) 0 1px 0, rgb(201, 201, 201) 0 2px 0, rgb(187, 187, 187) 0 3px 0, rgb(185, 185, 185) 0 4px 0, rgb(170, 170, 170) 0 5px 0, rgba(0, 0, 0, .0980392) 0 6px 1px, rgba(0, 0, 0, .0980392) 0 0 5px, rgba(0, 0, 0, .298039) 0 1px 3px, rgba(0, 0, 0, .2) 0 3px 5px, rgba(0, 0, 0, .247059) 0 5px 10px, rgba(0, 0, 0, .2) 0 10px 10px, rgba(0, 0, 0, .14902) 0 20px 20px;
+  text-shadow: rgb(204, 204, 204) 0 1px 0;
 }
 
 .weather-radar-wrapper {
@@ -692,7 +703,7 @@ h5 {
 .weather-wrapper {
   margin: 0 auto;
   background: url('/assets/img/heavyseas.jpg') center center no-repeat;
-  background-color: #396fd5;
+  background-color: #283593;
   background-size: cover;
   min-height: 1100px;
 }
@@ -709,7 +720,7 @@ h5 {
   img {
     width: 600px;
     border-radius: 80%;
-    border: 2px solid #396fd5;
+    border: 2px solid #283593;
   }
 }
 
@@ -729,7 +740,7 @@ h5 {
   margin: 0;
   line-height: 2;
   letter-spacing: .059em;
-  font-family: 'Syncopate', sans-serif;
+  font-family: $header-font;
 }
 
 .weather-stats,
@@ -774,7 +785,7 @@ h5 {
 
 .weather-data-form {
   border: 5px solid #fff;
-  background-color: #396fd5;
+  background-color: #283593;
   margin: 0 auto;
   width: 80%;
   text-align: center;

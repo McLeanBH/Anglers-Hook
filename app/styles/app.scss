@@ -690,11 +690,12 @@ h5 {
 /* WEATHER-RADAR */
 
 .weather-room-header {
+  margin: 0 auto;
   text-align: center;
   font-size: 64px;
-  color: #000;
+  color: #fff;
   text-shadow: 1px 1px 10px #333;
-}
+ }
 
 .weather-radar-wrapper {
   min-height: 1100px;
@@ -774,11 +775,6 @@ h5 {
 .statistics {
   display: inline-block;
   font-weight: bold;
-}
-
-.weather-room-header {
-  margin: 0;
-  color: #000;
 }
 
 .weather-box-data {

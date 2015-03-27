@@ -10,6 +10,7 @@ export default Ember.Route.extend({
 
   actions: {
     search: function(){
+      this.get('controller').set('searchTerm', '');
       return Ember.RSVP.hash({
         data: this.store.findQuery('weather-data', "29401"),
         radar: this.store.findQuery('weather-radar', '29401')

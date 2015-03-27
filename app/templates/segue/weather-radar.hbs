@@ -23,7 +23,7 @@
             </ul>
           </div>
 
-          <form class="weather-data-form">
+          <form class="weather-data-form" {{action "search" on="submit"}}>
             <fieldset class="weather-fieldset">
               <label class="weather-stats">Temperature: {{model.data.current_observation.temperature_string}}<i class="wi wi-thermometer"></i></label>
               <label class="weather-stats">Feels Like: {{model.data.current_observation.feelslike_string}}<i class="wi wi-fahrenheit"></i></label>

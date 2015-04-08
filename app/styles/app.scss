@@ -42,7 +42,7 @@ body {
 
 .nav-left {
   float: left;
-  background: url('/assets/img/bluemarlinlogo.png') center center no-repeat;
+  background: url('img/bluemarlinlogo.png') center center no-repeat;
   background-size: contain;
   width: 150px;
   height: 90px;
@@ -97,7 +97,7 @@ body {
   position: relative;
   border-top: 13px solid #181818;
   border-bottom: 13px solid #fff;
-  background: url('/assets/img/island.jpg') center center no-repeat;
+  background: url('img/island.jpg') center center no-repeat;
   background-size: cover;
   min-height: 600px;
 
@@ -404,7 +404,7 @@ body {
 /* Image not coming in for '.register-form' --> need to come back to this */
 .register-form {
   z-index: 10000;
-  background: ('assets/img/rainbow.png') center center no-repeat;
+  background: ('img/rainbow.png') center center no-repeat;
   background-size: contain;
 }
 
@@ -508,7 +508,7 @@ body {
 
 .background-image {
   border-bottom: 16px solid #fff;
-  background: url('/assets/img/storm2.jpg') center center no-repeat;
+  background: url('img/storm2.jpg') center center no-repeat;
   background-size: cover;
   height: 800px;
 }
@@ -547,53 +547,53 @@ body {
 }
 
 .sl1 {
-  background: url('/assets/img/deep-sea-fishing.jpg') center center no-repeat;
+  background: url('img/deep-sea-fishing.jpg') center center no-repeat;
   background-size: cover;
   vertical-align: middle;
 }
 
 .sl2 {
-  background: url('/assets/img/the-keys.png') center center no-repeat;
+  background: url('img/the-keys.png') center center no-repeat;
   background-size: cover;
 }
 
 .sl3 {
-  background: url('/assets/img/blue-running.png') center center no-repeat;
+  background: url('img/blue-running.png') center center no-repeat;
   background-size: contain;
 }
 
 .sl4 {
-  background: url('/assets/img/teasers.jpg') center center no-repeat;
+  background: url('img/teasers.jpg') center center no-repeat;
   background-size: cover;
 }
 
 .sl5 {
-  background: url('/assets/img/7.jpg') center center no-repeat;
+  background: url('img/7.jpg') center center no-repeat;
   background-size: cover;
 }
 
 .sl6 {
-  background: url('/assets/img/humdinger.jpg') center center no-repeat;
+  background: url('img/humdinger.jpg') center center no-repeat;
   background-size: cover;
 }
 
 .sl7 {
-  background: url('/assets/img/crowsview.jpg') center center no-repeat;
+  background: url('img/crowsview.jpg') center center no-repeat;
   background-size: cover;
 }
 
 .sl8 {
-  background: url('/assets/img/from-above.png') center center no-repeat;
+  background: url('img/from-above.png') center center no-repeat;
   background-size: cover;
 }
 
 .sl9 {
-  background: url('/assets/img/deep-sea-charter-fishing.jpg') center center no-repeat;
+  background: url('img/dscf.jpg') center center no-repeat;
   background-size: cover;
 }
 
 .sl10 {
-  background: url('/assets/img/reel-while-running.png') center center no-repeat;
+  background: url('img/reel-while-running.png') center center no-repeat;
   background-size: cover;
 }
 
@@ -681,7 +681,7 @@ h5 {
   left: 50%;
   z-index: 100001;
   margin: -15px 0 0 -15px;
-  background: url('/assets/img/loader.gif') center center no-repeat;
+  background: url('img/loader.gif') center center no-repeat;
   width: 31px;
   height: 31px;
 }
@@ -703,7 +703,7 @@ h5 {
 
 .weather-wrapper {
   margin: 0 auto;
-  background: url('/assets/img/heavyseas.jpg') center center no-repeat;
+  background: url('img/heavyseas.jpg') center center no-repeat;
   background-color: #283593;
   background-size: cover;
   min-height: 1100px;

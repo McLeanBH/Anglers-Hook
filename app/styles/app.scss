@@ -14,7 +14,7 @@ $header-font: 'Syncopate', sans-serif;
 body {
   margin: 0;
   padding: 0;
-  min-height: 800px;
+  min-height: 1200px;
 }
 
 .index-navbar {
@@ -85,12 +85,14 @@ body {
 
 .welcome-wrapper {
   background-color: #283593;
+  min-height: 935px;
 }
 
 .wrapper {
   border-bottom: 13px solid #fff;
   background-color: #283593;
   min-height: 1000px;
+  height: 100%;
 }
 
 .main-index-top {
@@ -99,7 +101,7 @@ body {
   border-bottom: 13px solid #fff;
   background: url('img/island.jpg') center center no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 935px;
 
   h1 {
     padding-top: 20px;
@@ -827,3 +829,83 @@ h5 {
     text-align: center;
   }
 }
+
+.leader-container {
+  min-height: 1500px;
+  border-top: 13px solid #000;
+}
+
+.gc-tourneys {
+  margin: 0 auto;
+  width: 1250px;
+}
+
+.banner-list {
+  list-style: none;
+  margin: 0 auto;
+  width: 1350px;
+
+  .banner {
+    display: inline-block;
+  }
+}
+.bibt a img,
+.mega a img {
+  width: 850px;
+  height: 250px;
+}
+
+.gcbc a img,
+.gbft a img {
+  width: 250px;
+  height: 250px;
+}
+
+.leader-board {
+  width: 1350px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+table {
+  margin: 0 auto;
+  width: 800px;
+  text-align: left;
+
+  th {
+    text-decoration: underline;
+  }
+}
+
+
+
+.gc-logo {
+  width: 1350px;
+  margin: 0 auto;
+  list-style: none;
+
+  li {
+    width: 400px;
+    margin: 0 auto;
+
+    img {
+      padding: 20px;
+      width: 400px;
+      height: 600px;
+    }
+  }
+}
+
+/* .gc-left {
+  float: left;
+  width: 40%;
+}
+
+.gc-right {
+  float: right;
+  width: 40%;
+} */

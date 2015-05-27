@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('segue', function() {
     this.route('dashboard');
     this.route('species-ref');
+    this.route('leaders');
     this.route('weather-radar', function() {
       this.route('loading');
     });

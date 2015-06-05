@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('dashboard');
     this.route('species-ref');
     this.route('leaders');
+    this.route('show');
     this.route('weather-radar', function() {
       this.route('loading');
     });
@@ -21,7 +22,6 @@ Router.map(function() {
     this.route('edit-profile');
   });
   this.route('search');
-  this.route('show');
 });
 
 export default Router;

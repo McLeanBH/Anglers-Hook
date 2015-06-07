@@ -619,6 +619,7 @@ body {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 30px;
+  height: 100%;
 
   button {
     background-color: #fdb42c;
@@ -634,11 +635,12 @@ body {
 .forum-wrapper {
   border-bottom: 13px solid #fff;
   background-color: #283593;
-  min-height: 700px;
+  min-height: 1750px;
 }
 
 .media-list {
   list-style: none;
+  height: 100%;
 }
 
 h5 {
@@ -822,12 +824,17 @@ h5 {
 
 .photo-gallery {
   padding-bottom: 60px;
+  height: 100%;
 
   ul {
     padding: 0;
     margin: 0 auto;
     text-align: center;
   }
+}
+
+.media-room {
+  min-height: fit-content;
 }
 
 .leader-container {
@@ -964,107 +971,107 @@ table {
 }
 .cb-slideshow li:nth-child(2) span {
     background-image: url('pics/albino2.png');
-    animation-delay: 6s;
+    animation-delay: 3s;
 }
 .cb-slideshow li:nth-child(3) span {
     background-image: url('pics/albino.jpg');
-    animation-delay: 10s;
+    animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(4) span {
     background-image: url('pics/billfish.jpg');
-    animation-delay: 14s;
+    animation-delay: 9s;
 }
 .cb-slideshow li:nth-child(5) span {
     background-image: url('pics/black.jpg');
-    animation-delay: 18s;
+    animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(6) span {
     background-image: url('pics/blue1.jpg');
-    animation-delay: 22s;
+    animation-delay: 15s;
 }
 
 .cb-slideshow li:nth-child(7) span {
     background-image: url('pics/bmarlin.jpg');
-    animation-delay: 26s;
+    animation-delay: 18s;
 }
 
 .cb-slideshow li:nth-child(8) span {
     background-image: url('pics/guat-e-marlin.jpg');
-    animation-delay: 30s;
+    animation-delay: 21s;
 }
 
 .cb-slideshow li:nth-child(9) span {
     background-image: url('pics/hooked.jpg');
-    animation-delay: 34s;
+    animation-delay: 24s;
 }
 
 .cb-slideshow li:nth-child(10) span {
     background-image: url('pics/jumper.jpg');
-    animation-delay: 38s;
+    animation-delay: 27s;
 }
 .cb-slideshow li:nth-child(11) span {
     background-image: url('pics/panama.jpg');
-    animation-delay: 42s;
+    animation-delay: 30s;
 }
 .cb-slideshow li:nth-child(12) span {
     background-image: url('pics/mako.jpg');
-    animation-delay: 46s;
+    animation-delay: 33s;
 }
 .cb-slideshow li:nth-child(13) span {
     background-image: url('pics/mozambique.jpg');
-    animation-delay: 50s;
+    animation-delay: 36s;
 }
 .cb-slideshow li:nth-child(14) span {
     background-image: url('pics/sinking.jpg');
-    animation-delay: 54s;
+    animation-delay: 39s;
 }
 .cb-slideshow li:nth-child(15) span {
     background-image: url('pics/south-florida.jpg');
-    animation-delay: 58s;
+    animation-delay: 42s;
 }
 
 
 .cb-slideshow li:nth-child(2) div {
-    animation-delay: 6s;
+    animation-delay: 3s;
 }
 .cb-slideshow li:nth-child(3) div {
-    animation-delay: 10s;
+    animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(4) div {
-    animation-delay: 14s;
+    animation-delay: 9s;
 }
 .cb-slideshow li:nth-child(5) div {
-    animation-delay: 18s;
+    animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(6) div {
-    animation-delay: 22s;
+    animation-delay: 15s;
 }
 .cb-slideshow li:nth-child(7) div {
-    animation-delay: 26s;
+    animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(8) div {
-    animation-delay: 30s;
+    animation-delay: 21s;
 }
 .cb-slideshow li:nth-child(9) div {
-    animation-delay: 34s;
+    animation-delay: 24s;
 }
 .cb-slideshow li:nth-child(10) div {
-    animation-delay: 38s;
+    animation-delay: 27s;
 }
 .cb-slideshow li:nth-child(11) div {
-    animation-delay: 42s;
+    animation-delay: 30s;
 }
 .cb-slideshow li:nth-child(12) div {
-    animation-delay: 46s;
+    animation-delay: 33s;
 }
 .cb-slideshow li:nth-child(13) div {
-    animation-delay: 50s;
+    animation-delay: 36s;
 }
 .cb-slideshow li:nth-child(14) div {
-    animation-delay: 54s;
+    animation-delay: 39s;
 }
 .cb-slideshow li:nth-child(15) div {
-    animation-delay: 58s;
+    animation-delay: 42s;
 }
 
 

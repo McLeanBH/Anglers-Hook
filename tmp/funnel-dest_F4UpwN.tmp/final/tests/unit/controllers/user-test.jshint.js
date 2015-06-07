@@ -1,0 +1,1 @@
+/Users/Bennett_McL/Desktop/PROJECT/Final/tmp/jshinter-tmp_dest_dir-6qIh2I3p.tmp/unit/controllers/user-test.jshint.js

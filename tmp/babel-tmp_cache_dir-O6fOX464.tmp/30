@@ -1,0 +1,15 @@
+import Ember from "ember";
+
+var computed = Ember.computed;
+var getWithDefault = Ember.getWithDefault;
+
+export default function (dependentKey) {
+  return computed("" + dependentKey + ".@each", function () {
+    var emptyArray = Ember.A([]);
+    var items = getWithDefault(this, dependentKey, emptyArray);
+    var length = items.get("length");
+    var randomItem = items[Math.floor(Math.random() * length)];
+
+    return randomItem || "";
+  }).volatile();
+};

@@ -1,0 +1,4 @@
+module('JSHint - components');
+test('components/loading-message.js should pass jshint', function() { 
+  ok(false, 'components/loading-message.js should pass jshint.\ncomponents/loading-message.js: line 16, col 2, Unnecessary semicolon.\n\n1 error'); 
+});

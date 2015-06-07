@@ -1,5 +1,5 @@
 {
-  "name": "final",
+  "name": "TheAnglersHook",
   "root": "./dist",
   "routes": {
     "/tests": "tests/index.html",

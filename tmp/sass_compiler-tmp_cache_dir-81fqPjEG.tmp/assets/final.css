@@ -1,0 +1,325 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 4.70555%, transparent 4.70555%, transparent 8.66313%, #eee 8.66313%, #eee 13.36868%, transparent 13.36868%, transparent 17.32626%, #eee 17.32626%, #eee 22.03181%, transparent 22.03181%, transparent 25.9894%, #eee 25.9894%, #eee 30.69495%, transparent 30.69495%, transparent 34.65253%, #eee 34.65253%, #eee 39.35808%, transparent 39.35808%, transparent 43.31566%, #eee 43.31566%, #eee 48.02121%, transparent 48.02121%, transparent 51.97879%, #eee 51.97879%, #eee 56.68434%, transparent 56.68434%, transparent 60.64192%, #eee 60.64192%, #eee 65.34747%, transparent 65.34747%, transparent 69.30505%, #eee 69.30505%, #eee 74.0106%, transparent 74.0106%, transparent 77.96819%, #eee 77.96819%, #eee 82.67374%, transparent 82.67374%, transparent 86.63132%, #eee 86.63132%, #eee 91.33687%, transparent 91.33687%, transparent 95.29445%, #eee 95.29445%, #eee 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 4.70555%, transparent 4.70555%, transparent 8.66313%, #eee 8.66313%, #eee 13.36868%, transparent 13.36868%, transparent 17.32626%, #eee 17.32626%, #eee 22.03181%, transparent 22.03181%, transparent 25.9894%, #eee 25.9894%, #eee 30.69495%, transparent 30.69495%, transparent 34.65253%, #eee 34.65253%, #eee 39.35808%, transparent 39.35808%, transparent 43.31566%, #eee 43.31566%, #eee 48.02121%, transparent 48.02121%, transparent 51.97879%, #eee 51.97879%, #eee 56.68434%, transparent 56.68434%, transparent 60.64192%, #eee 60.64192%, #eee 65.34747%, transparent 65.34747%, transparent 69.30505%, #eee 69.30505%, #eee 74.0106%, transparent 74.0106%, transparent 77.96819%, #eee 77.96819%, #eee 82.67374%, transparent 82.67374%, transparent 86.63132%, #eee 86.63132%, #eee 91.33687%, transparent 91.33687%, transparent 95.29445%, #eee 95.29445%, #eee 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 4.70555%, transparent 4.70555%, transparent 8.66313%, #eee 8.66313%, #eee 13.36868%, transparent 13.36868%, transparent 17.32626%, #eee 17.32626%, #eee 22.03181%, transparent 22.03181%, transparent 25.9894%, #eee 25.9894%, #eee 30.69495%, transparent 30.69495%, transparent 34.65253%, #eee 34.65253%, #eee 39.35808%, transparent 39.35808%, transparent 43.31566%, #eee 43.31566%, #eee 48.02121%, transparent 48.02121%, transparent 51.97879%, #eee 51.97879%, #eee 56.68434%, transparent 56.68434%, transparent 60.64192%, #eee 60.64192%, #eee 65.34747%, transparent 65.34747%, transparent 69.30505%, #eee 69.30505%, #eee 74.0106%, transparent 74.0106%, transparent 77.96819%, #eee 77.96819%, #eee 82.67374%, transparent 82.67374%, transparent 86.63132%, #eee 86.63132%, #eee 91.33687%, transparent 91.33687%, transparent 95.29445%, #eee 95.29445%, #eee 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 4.70555%, transparent 4.70555%, transparent 8.66313%, #eee 8.66313%, #eee 13.36868%, transparent 13.36868%, transparent 17.32626%, #eee 17.32626%, #eee 22.03181%, transparent 22.03181%, transparent 25.9894%, #eee 25.9894%, #eee 30.69495%, transparent 30.69495%, transparent 34.65253%, #eee 34.65253%, #eee 39.35808%, transparent 39.35808%, transparent 43.31566%, #eee 43.31566%, #eee 48.02121%, transparent 48.02121%, transparent 51.97879%, #eee 51.97879%, #eee 56.68434%, transparent 56.68434%, transparent 60.64192%, #eee 60.64192%, #eee 65.34747%, transparent 65.34747%, transparent 69.30505%, #eee 69.30505%, #eee 74.0106%, transparent 74.0106%, transparent 77.96819%, #eee 77.96819%, #eee 82.67374%, transparent 82.67374%, transparent 86.63132%, #eee 86.63132%, #eee 91.33687%, transparent 91.33687%, transparent 95.29445%, #eee 95.29445%, #eee 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 4.70555%, transparent 4.70555%, transparent 8.66313%, #eee 8.66313%, #eee 13.36868%, transparent 13.36868%, transparent 17.32626%, #eee 17.32626%, #eee 22.03181%, transparent 22.03181%, transparent 25.9894%, #eee 25.9894%, #eee 30.69495%, transparent 30.69495%, transparent 34.65253%, #eee 34.65253%, #eee 39.35808%, transparent 39.35808%, transparent 43.31566%, #eee 43.31566%, #eee 48.02121%, transparent 48.02121%, transparent 51.97879%, #eee 51.97879%, #eee 56.68434%, transparent 56.68434%, transparent 60.64192%, #eee 60.64192%, #eee 65.34747%, transparent 65.34747%, transparent 69.30505%, #eee 69.30505%, #eee 74.0106%, transparent 74.0106%, transparent 77.96819%, #eee 77.96819%, #eee 82.67374%, transparent 82.67374%, transparent 86.63132%, #eee 86.63132%, #eee 91.33687%, transparent 91.33687%, transparent 95.29445%, #eee 95.29445%, #eee 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+
+* {
+  box-sizing: border-box; }
+
+/* .mask {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100000;
+}
+
+#loader {
+  background: url('/assets/img/loader.gif') center center no-repeat;
+  height: 31px;
+  width: 31px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  z-index: 100001;
+  margin: -15px 0 0 -15px;
+} */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 800px; }
+
+.index-navbar {
+  border-bottom: 13px solid #fff;
+  background: #fdb42c;
+  height: 80px; }
+  .index-navbar ul {
+    position: absolute;
+    right: 50px;
+    margin-right: 150px; }
+  .index-navbar li {
+    display: inline-block;
+    margin-left: 44px;
+    background-color: #fdb42c;
+    cursor: pointer;
+    padding: 6px;
+    text-decoration: none;
+    color: #269fc3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; }
+
+.nav-left {
+  float: left;
+  background: url('/assets/img/bluemarlinlogo.png') center center no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 90px; }
+
+.nav-left:hover {
+  transform: rotate(360deg);
+  transition: transform .9s ease-out; }
+
+.nav-container {
+  position: relative;
+  margin: 0 auto;
+  background-color: #fbd42c;
+  min-width: 1000px; }
+  .nav-container a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 16px;
+    font-weight: 900; }
+
+.welcome-wrapper {
+  background-color: #396fd5; }
+
+.wrapper {
+  border-bottom: 13px solid #fff;
+  background-color: #396fd5;
+  height: 1000px; }
+
+.main-index-top {
+  position: relative;
+  border-top: 13px solid #181818;
+  border-bottom: 13px solid #fff;
+  background: url('/assets/img/island.jpg') center center no-repeat;
+  background-size: cover;
+  height: 800px; }
+
+.main-index-top::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  content: ''; }
+
+.welcome-buttons {
+  z-index: 100000;
+  margin: 0 auto;
+  margin-top: 350px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff; }
+
+.welcomer {
+  cursor: pointer;
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900; }
+
+.footer {
+  border-top: 13px solid #fbd42c;
+  background-color: #181818;
+  height: 190px;
+  color: #fff; }
+
+.footer-list {
+  padding-top: 20px;
+  padding-left: 640px;
+  list-style: none; }
+
+.footer-icons {
+  display: inline-block;
+  padding-left: 20px; }
+
+.footer-icons:hover {
+  transform: rotate(360deg);
+  transition: transform .9s ease-out; }
+
+.copy {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 45%;
+  color: #fff;
+  font-family: 'PT Mono'; }
+
+/* LOGIN PAGE */
+.top-border-div {
+  border-top: 13px solid #181818; }
+
+.login {
+  margin: 0 auto;
+  margin-top: 10%;
+  background-color: #fff;
+  width: 600px;
+  text-align: center; }
+
+.login-header {
+  text-decoration: underline; }
+
+.login-field {
+  display: block;
+  margin: 20px;
+  margin-left: 50px;
+  border-top: 4px solid #396fd5;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  border-left: 4px solid #396fd5;
+  width: 370px;
+  text-align: right;
+  line-height: 2;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold; }
+
+.login-password {
+  border-top: 4px solid #000;
+  border-right: 4px solid #396fd5;
+  border-bottom: 4px solid #396fd5;
+  border-left: 4px solid #000; }
+
+.login-button {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-top: 4px solid #000;
+  border-right: 4px solid #396fd5;
+  border-bottom: 4px solid #396fd5;
+  border-left: 4px solid #000;
+  width: 100px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold; }
+
+.login-fieldset {
+  margin: 0;
+  border: 13px solid #fbd42c;
+  padding-right: 50px;
+  padding-left: 50px; }
+
+.inputters {
+  background-color: #eee; }
+
+/* REGISTRATION PAGE */
+.registration {
+  margin: 60px auto;
+  background-color: #fff;
+  width: 600px;
+  text-align: center; }
+
+/* Image not coming in for '.register-form' --> need to come back to this */
+.register-form {
+  z-index: 10000;
+  background: 'assets/img/rainbow.png' center center no-repeat;
+  background-size: contain; }
+
+.reg-field {
+  display: block;
+  margin: 0 auto;
+  margin-left: 100px;
+  width: 370px;
+  text-align: right;
+  line-height: 3;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold; }
+
+.register-button {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-top: 4px solid #000;
+  border-right: 4px solid #396fd5;
+  border-bottom: 4px solid #396fd5;
+  border-left: 4px solid #000;
+  width: 200px;
+  line-height: 3;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold; }
+
+.reg-fieldset {
+  margin: 0;
+  border: 10px solid #fbd42c; }
+
+.reg-header {
+  text-decoration: underline; }
+
+.first-name {
+  margin-top: 20px; }
+
+.r1 {
+  border-top: 4px solid #396fd5;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  border-left: 4px solid #396fd5; }
+
+.r2 {
+  border-top: 4px solid #000;
+  border-right: 4px solid #396fd5;
+  border-bottom: 4px solid #396fd5;
+  border-left: 4px solid #000; }
+
+/* Segue - View-One */
+.left-content-wrapper, .right-content-wrapper {
+  display: inline-block; }
+
+.left-content-wrapper {
+  width: 400px; }
+
+.right-content-wrapper {
+  width: 600px; }
+
+.map-canvas {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px; }
+
+/* SPECIES-REF PAGE */
+.logo-list {
+  margin: 0 auto;
+  padding-top: 230px; }
+  .logo-list li {
+    display: inline-block; }
+
+.background-image {
+  background: url('/assets/img/blue-running.png') center center no-repeat;
+  background-size: cover; }
+
+.species-wrapper {
+  margin: 0 auto;
+  padding-top: 50px; }
+
+.chart {
+  display: inline-block;
+  margin: 0 auto; }
+  .chart img {
+    width: 95%;
+    height: 95%;
+    vertical-align: middle;
+    margin-bottom: 200px; }
+
+.chart-2, .chart-3 {
+  width: 35%;
+  height: 35%; }
+
+/*# sourceMappingURL=final.css.map */

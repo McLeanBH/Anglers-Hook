@@ -1,0 +1,4 @@
+module('JSHint - components');
+test('components/loading-message.js should pass jshint', function() { 
+  ok(true, 'components/loading-message.js should pass jshint.'); 
+});

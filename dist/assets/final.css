@@ -42,18 +42,20 @@ body {
   width: 150px;
   height: 90px; }
 
-.home-btn {
+/* .home-btn {
   position: absolute;
   top: 25px;
-  left: 110px; }
-  .home-btn a {
+  left: 110px;
+
+  a {
     text-decoration: none;
     color: #000;
-    font-family: 'Syncopate', sans-serif;
-    /* 'Syncopate', sans-serif; */
+    font-family: $header-font;  'Syncopate', sans-serif;
     font-size: 12px;
-    font-weight: 700; }
-
+    font-weight: 700;
+  }
+}
+ */
 .nav-left:hover {
   transform: rotate(360deg);
   transition: transform .9s ease-out; }
@@ -86,7 +88,7 @@ body {
   border-bottom: 13px solid #fff;
   background: url('img/island.jpg') center center no-repeat;
   background-size: cover;
-  min-height: 935px; }
+  min-height: 635px; }
   .main-index-top h1 {
     padding-top: 20px;
     text-align: center;

@@ -1156,6 +1156,10 @@ define('final/templates/application', ['exports'], function (exports) {
         var el4 = dom.createTextNode("\n      ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("li");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n      ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("li");
         var el5 = dom.createTextNode("      ");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
@@ -1342,7 +1346,7 @@ define('final/templates/application', ['exports'], function (exports) {
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("p");
         dom.setAttribute(el2,"class","copy");
-        var el3 = dom.createTextNode("The Iron Yard © 2015 Ben McLean");
+        var el3 = dom.createTextNode("2015 © www.TheAnglersHook.com");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n");
@@ -1372,27 +1376,26 @@ define('final/templates/application', ['exports'], function (exports) {
         } else {
           fragment = this.build(dom);
         }
-        var element1 = dom.childAt(fragment, [0]);
-        var element2 = dom.childAt(element1, [5, 1]);
-        var morph0 = dom.createMorphAt(dom.childAt(element1, [3]),-1,-1);
-        var morph1 = dom.createMorphAt(dom.childAt(element2, [1]),-1,-1);
-        var morph2 = dom.createMorphAt(dom.childAt(element2, [3]),-1,0);
-        var morph3 = dom.createMorphAt(dom.childAt(element2, [5]),-1,-1);
-        var morph4 = dom.createMorphAt(dom.childAt(element2, [7]),-1,-1);
-        var morph5 = dom.createMorphAt(dom.childAt(element2, [9]),-1,-1);
-        var morph6 = dom.createMorphAt(dom.childAt(element2, [11]),-1,-1);
-        var morph7 = dom.createMorphAt(dom.childAt(element2, [13]),-1,-1);
-        var morph8 = dom.createMorphAt(dom.childAt(element2, [15]),-1,-1);
+        var element1 = dom.childAt(fragment, [0, 5, 1]);
+        var morph0 = dom.createMorphAt(dom.childAt(element1, [1]),-1,-1);
+        var morph1 = dom.createMorphAt(dom.childAt(element1, [3]),-1,-1);
+        var morph2 = dom.createMorphAt(dom.childAt(element1, [5]),-1,0);
+        var morph3 = dom.createMorphAt(dom.childAt(element1, [7]),-1,-1);
+        var morph4 = dom.createMorphAt(dom.childAt(element1, [9]),-1,-1);
+        var morph5 = dom.createMorphAt(dom.childAt(element1, [11]),-1,-1);
+        var morph6 = dom.createMorphAt(dom.childAt(element1, [13]),-1,-1);
+        var morph7 = dom.createMorphAt(dom.childAt(element1, [15]),-1,-1);
+        var morph8 = dom.createMorphAt(dom.childAt(element1, [17]),-1,-1);
         var morph9 = dom.createMorphAt(fragment,1,2,contextualElement);
         inline(env, morph0, context, "link-to", ["Home", "welcome"], {});
         inline(env, morph1, context, "link-to", ["Register", "register"], {});
         block(env, morph2, context, "if", [get(env, context, "session.isAuthenticated")], {}, child0, child1);
-        inline(env, morph3, context, "link-to", ["Species", "segue.species-ref"], {});
-        inline(env, morph4, context, "link-to", ["Radar", "segue.weather-radar"], {});
-        inline(env, morph5, context, "link-to", ["Media", "segue.forum"], {});
-        inline(env, morph6, context, "link-to", ["Dashboard", "segue.dashboard"], {});
-        inline(env, morph7, context, "link-to", ["Leaders", "segue.leaders"], {});
-        inline(env, morph8, context, "link-to", ["Gallery", "segue.show"], {});
+        inline(env, morph3, context, "link-to", ["Dashboard", "segue.dashboard"], {});
+        inline(env, morph4, context, "link-to", ["Leaders", "segue.leaders"], {});
+        inline(env, morph5, context, "link-to", ["Gallery", "segue.show"], {});
+        inline(env, morph6, context, "link-to", ["Species", "segue.species-ref"], {});
+        inline(env, morph7, context, "link-to", ["Radar", "segue.weather-radar"], {});
+        inline(env, morph8, context, "link-to", ["Media", "segue.forum"], {});
         content(env, morph9, context, "outlet");
         return fragment;
       }
@@ -6129,7 +6132,7 @@ catch(err) {
 if (runningTests) {
   require("final/tests/test-helper");
 } else {
-  require("final/app")["default"].create({"filepickerKey":"A4kxhmkh4TVYjc7Kv3IGQz","name":"final","version":"0.0.0.deea9e8e"});
+  require("final/app")["default"].create({"filepickerKey":"A4kxhmkh4TVYjc7Kv3IGQz","name":"final","version":"0.0.0.26491f01"});
 }
 
 /* jshint ignore:end */

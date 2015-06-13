@@ -4,10 +4,10 @@
       <form class="register-form"{{action 'saveUser' on='submit'}}>
         <fieldset class="reg-fieldset">
           <h1 class="reg-header">Register For Free Account!</h1>
-          {{input class="reg-field r1 first-name inputters" value=model.firstName placeholder='First Name'}}<br>
-          {{input class="reg-field r2 last-name inputters" value=model.lastName placeholder='Last Name'}}<br>
+          {{input class="reg-field r1 first-name inputters" value=model.firstName placeholder='Name of Captain'}}<br>
+          {{input class="reg-field r2 last-name inputters" value=model.lastName placeholder='Name of Angler'}}<br>
           {{input class="reg-field r1 email inputters" value=model.email placeholder='Email Address'}}<br>
-          {{input class="reg-field r2 username inputters" value=model.username placeholder='Username'}}<br>
+          {{input class="reg-field r2 username inputters" value=model.username placeholder='Name of Boat (Username)'}}<br>
           {{input type="password" class="reg-field r1 password inputters" value=model.password placeholder='Password'}}<br>
           <input type="submit" value="Create Account" class="register-button"/><br>
           <span>{{link-to "* Continue As Visitor" 'welcome'}}</span><br>

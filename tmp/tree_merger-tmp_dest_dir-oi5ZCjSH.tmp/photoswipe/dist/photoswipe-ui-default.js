@@ -1,1 +1,0 @@
-/Users/Bennett_McL/Desktop/PROJECT/Final/tmp/custom_static_compiler-tmp_dest_dir-f6s62YYl.tmp/photoswipe/dist/photoswipe-ui-default.js

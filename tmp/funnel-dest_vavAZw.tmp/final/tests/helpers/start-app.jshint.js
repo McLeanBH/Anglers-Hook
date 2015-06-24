@@ -1,1 +1,0 @@
-/Users/Bennett_McL/Desktop/PROJECT/Final/tmp/jshinter-tmp_dest_dir-blcXp1JE.tmp/helpers/start-app.jshint.js

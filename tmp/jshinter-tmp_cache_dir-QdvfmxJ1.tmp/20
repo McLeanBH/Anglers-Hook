@@ -1,4 +1,0 @@
-module('JSHint - unit/components');
-test('unit/components/loading-message-test.js should pass jshint', function() { 
-  ok(true, 'unit/components/loading-message-test.js should pass jshint.'); 
-});
